@@ -45,7 +45,7 @@
     <br>
     Slowly-updating leaderboard (Updates every 5 minutes):
     <br>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoewyyRc9f6GdqXeejeRmNq0D7p4Gzi34pk7jMdscRwmRhH6q79EH_CAWfuF7oVoPCphD27aKBVrk5/pubhtml?gid=877121638&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="350"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoewyyRc9f6GdqXeejeRmNq0D7p4Gzi34pk7jMdscRwmRhH6q79EH_CAWfuF7oVoPCphD27aKBVrk5/pubhtml?gid=877121638&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="350"></iframe>
     <br>
     </center>
     <div class = "row">
@@ -88,8 +88,47 @@
       <h2>
         Rules
       </h2>
-      \[ \left ( 10 + \sum_{\text{good intervals}} \frac{\text{upper bound}}{\text{lower bound}} \right )
-        \cdot 2^{n - \# \text{good intervals} \]
+      <h3>
+        Overview
+      </h3>
+      Your team will have NNNN minutes to work on NNNN estimation problems.
+      The answer to each problem is a positive number.
+      Your team will submit intervals for each problem.
+      Intervals may not contain negative numbers or zero.
+      <br>
+      You may not use the internet, or your calculator/smartphone,
+      or any other type of external reference material.
+      <br>
+      <h3>
+        Scoring
+      </h3>
+      An interval is good if it contains the correct answer.
+      After the time limit is over, the final score for your team will be:
+      \( \left ( 10 + \sum_{\text{good intervals}} \frac{\text{upper bound}}{\text{lower bound}} \right )
+        \cdot 2^{n - \# \text{good intervals}. \)
+      That is, for every problem you get wrong (or leave blank), your score doubles.
+      <br>
+      The winning team is the team with the lowest score.
+      <br>
+      <h3>
+        Submitting intervals
+      </h3>
+      Every team can submit up to NNN total intervals.
+      Submit your intervals (along with your team number and question number) in the Google form above.
+      The lower bound should be below the quantity to estimate, and
+      the upper bound should be above the quantity to estimate.
+      For instance, if you are estimating the number 100, you might entire a lower bound of 60 and an upper bound of 978.
+      <br>
+      The scoreboard at the top of the page will be updated with a 5-minute delay according to teams' progress.
+      There is also a link to a leaderboard which will update upon every refresh.
+      <br>
+      <h3>
+        Re-submitting
+      </h3>
+      Given that each team has NNNN allowed submissions and that there are only NNNNN problems,
+      it is possible to submit intervals for a given quantity more than once.
+      If you do this, the best interval (i.e., the smallest ratio) will be the one which counts
+      toward your score.
     </center>
   </body>
 </html>
