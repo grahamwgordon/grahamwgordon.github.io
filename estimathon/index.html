@@ -8,6 +8,20 @@
       body {
         font-family: courier;
       }
+      {
+        box-sizing: border-box;
+      }
+      /* Set additional styling options for the columns*/
+      .column {
+      float: left;
+      width: 50%;
+      }
+
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
     </style>
     <h1>
       <center>Estimathon</center>
@@ -29,21 +43,25 @@
     <br>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoewyyRc9f6GdqXeejeRmNq0D7p4Gzi34pk7jMdscRwmRhH6q79EH_CAWfuF7oVoPCphD27aKBVrk5/pubhtml?gid=877121638&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="350"></iframe>
     <br>
-    <h2>
-      Quantities to estimate
-    </h2>
-    <br>
-    <ol>
-      <li> number of cheeseburgers i ate </li>
-      <li> number of cheeseburgers i didn't ate </li>
-    </ol>
-    <br>
-    <h2>
-      Submit your answers here:
-    </h2>
-    (18 total responses allowed, or something like that)
-    <br>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVg_9kGE-VYWoRxrsRGjU03W_TktNYTDckoOBa6LJ8CKXydA/viewform?embedded=true" width="500" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class = "row">
+      <div class = "column">
+        <h2>
+          Quantities to estimate
+        </h2>
+        <br>
+        <ol>
+          <li> number of cheeseburgers i ate </li>
+          <li> number of cheeseburgers i didn't ate </li>
+        </ol>
+      </div>
+      <div class = "column">
+        <h2>
+          Submit your answers here:
+        </h2>
+        (18 total responses allowed, or something like that)
+        <br>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVg_9kGE-VYWoRxrsRGjU03W_TktNYTDckoOBa6LJ8CKXydA/viewform?embedded=true" width="500" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
     </center>
   </body>
 </html>
