@@ -25,7 +25,7 @@
     </style>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   	<script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   	</script>
     <h1>
       <center>Estimathon</center>
@@ -45,7 +45,7 @@
     <br>
     Slowly-updating leaderboard (Updates every 5 minutes):
     <br>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoewyyRc9f6GdqXeejeRmNq0D7p4Gzi34pk7jMdscRwmRhH6q79EH_CAWfuF7oVoPCphD27aKBVrk5/pubhtml?gid=877121638&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="350"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoewyyRc9f6GdqXeejeRmNq0D7p4Gzi34pk7jMdscRwmRhH6q79EH_CAWfuF7oVoPCphD27aKBVrk5/pubhtml?gid=877121638&amp;single=true&amp;widget=true&amp;headers=false" width=100% height="350"></iframe>
     <br>
     </center>
     <div class = "row">
@@ -104,8 +104,10 @@
       </h3>
       An interval is good if it contains the correct answer.
       After the time limit is over, the final score for your team will be:
-      \( \left ( 10 + \sum_{\text{good intervals}} \frac{\text{upper bound}}{\text{lower bound}} \right )
-        \cdot 2^{n - \# \text{good intervals}. \)
+      <br>
+      \[ \left ( 10 + \sum_{\text{good intervals}} \frac{\text{upper bound}}{\text{lower bound}} \right )
+        \cdot 2^{n - \# \text{good intervals}. \]
+      <br>
       That is, for every problem you get wrong (or leave blank), your score doubles.
       <br>
       The winning team is the team with the lowest score.
