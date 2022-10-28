@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'opendyslexicregular';
+  src: url('font/opendyslexic-regular-webfont.woff2') format('woff2'),
+       url('font/opendyslexic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +16,7 @@ img {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'opendyslexicregular',sans-serif;
   padding: 10px;
   background: #eddcff;
 }
