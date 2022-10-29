@@ -7,7 +7,7 @@ var time_interval ;
 var adj_th_degs = [0,0,1,1.5,1,1,0,-0.5,-0.95,-1.5,-1.75,-2] ;
 
 function setup() {
-    createCanvas(400,400) ;
+    createCanvas(300,300) ;
     cx = width/2 ;
     cy = height/2 ;
     r = width/2-10 ;
@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-    background(222) ;
+    background(0) ;
     
 
     // face
