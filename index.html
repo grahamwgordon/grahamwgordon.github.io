@@ -14,26 +14,26 @@
         <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
         </script>
+        
 	
 	</head>
 	
 	<body>
-        <script src="./my_script.js"></script>
+        
         
 
         <div class="header", id = "Top">
           <h1>graham i am</h1>
         </div>
         
+
         <div class="topnav">
             <a href="#Games">games</a>
             <a href="#Programs">programs</a>
             <a href="#Writing">writing</a>
             <a href="#Teaching">teaching</a>
             <a href="#Education">education</a>
-            <a href="#Research">research</a>
-          
-          
+            <a href="#Research">research</a>          
         </div>
         
         <div class="row">
@@ -73,34 +73,46 @@
                     <li> try to <a href="./venn/venn.html">draw</a> symmetric Venn diagrams (click to reset)  </li>
                     <li> <a href="./circle/reflection.html">reflect</a> a square over a circle (click in window and use arrow keys to adjust sizes) </li>
                     <li> a <a href="./orthog/orthog_lines.html">program</a> in which two lines try to meet the one you draw at right angles (click to restart) </li>
-                    <li> the <a href="./galois/clock.html">Galois clock</a>
-                        <ul>
-                            <li> move mouse left/right to turn clock </li>
-                            <li> click in window and then use left/right arrow keys to fine-tune </li>
-                            <li> bonus: try to figure out what it means! (here's a <a href="https://youtu.be/enRRjeF3iGk">presentation</a> about it)</li>
-                            <li> relatedly, <a href="galois/better_clock.html">here (work in progress)</a> is how i believe all 12-hr analog clocks should work...
-                                <ul>
-                                    <li> there are five minutes per revolution of the second hand </li>
-                                    <li> each hand moves exactly 12 times faster than the last </li>
-                                    <li> the demo is sped up so you can see how it works over "long periods of time"</li>
-                                    <li> made with <a href="https://p5js.org/">p5.js</a> </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li>
+                        <button type="button" class="collapsible">
+                            the Galois clock
+                        </button>
+                        <div class="content">
+                            click <a href="./galois/clock.html">here for the clock itself!</a>
+                            <ul>
+                                <li> move mouse left/right to turn clock </li>
+                                <li> click in window and then use left/right arrow keys to fine-tune </li>
+                                <li> bonus: try to figure out what it means! (here's a <a href="https://youtu.be/enRRjeF3iGk">presentation</a> about it)</li>
+                                <li> relatedly, <a href="galois/better_clock.html">here (work in progress)</a> is how i believe all 12-hr analog clocks should work...
+                                    <ul>
+                                        <li> there are five minutes per revolution of the second hand </li>
+                                        <li> each hand moves exactly 12 times faster than the last </li>
+                                        <li> the demo is sped up so you can see how it works over "long periods of time"</li>
+                                        <li> made with <a href="https://p5js.org/">p5.js</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     
-                    <li> here's a rough draft of my <a href="./battleship/Battleship.html">interface for solving battleship logic puzzles</a> (updates on the way eventually) </li>
-                        <ul>
-                            <li> left click to place water </li>
-                            <li> right click to place a ship </li>
-                            <li> left click at the end of row/column and type number </li>
-                            <li> A toggles autofill </li>
-                            <li> C saves a checkpoint </li>
-                            <li> L loads the checkpoint </li>
-                            <li> N removes a row/column number </li>
-                            <li> R resets if pressed twice </li>
-                            <li> U = undo one step </li>
-                            <li> let me know if you want any features! </li>
-                        </ul>
+                    <li>
+                        <button type="button" class="collapsible">
+                            interface for solving battleship logic puzzles
+                        </button>
+                        <div class="content">
+                            <a href="./battleship/Battleship.html">here's the code!</a> (updates on the way eventually)
+                            <ul>
+                                <li> left click to place water </li>
+                                <li> right click to place a ship </li>
+                                <li> left click at the end of row/column and type number </li>
+                                <li> A toggles autofill </li>
+                                <li> C saves a checkpoint </li>
+                                <li> L loads the checkpoint </li>
+                                <li> N removes a row/column number </li>
+                                <li> R resets if pressed twice </li>
+                                <li> U = undo one step </li>
+                                <li> let me know if you want any features! </li>
+                            </ul>
+                        </div>
                     
                 </ul>
             </div>
@@ -144,39 +156,61 @@
                 here are some classes i have taught in various places
 
                 <ul>
-                    <li><a href="https://www.proofschool.org">Proof School</a> (my current position)
-                        <ul>
-                            <li>graph theory</li>
-                            <li>linear algebra</li>
-                            <li>algebra</li>
-                            <li>euclidean geometry</li>
-                            <li>applications of linear algebra
-                                <ul>
-                                    <li>based on one of my <a href="https://kam.mff.cuni.cz/~matousek/la-ams.html">favorite math books ever</a></li>
-                                </ul>
-                            </li>
-                            <li>cryptography</li>
-                            <li>algebraic topology</li>
-                            <li>precalculus</li>
-                            <li>differential calculus</li>
-                        </ul>
+                    <li>
+                        <button type="button" class="collapsible">
+                            <a href="https://www.proofschool.org">
+                                Proof School
+                            </a>
+                            (my current position)
+                        </button>
+                        <div class="content">
+                            <ul>
+                                <li>graph theory</li>
+                                <li>linear algebra</li>
+                                <li>algebra</li>
+                                <li>euclidean geometry</li>
+                                <li>applications of linear algebra
+                                    <ul>
+                                        <li>based on one of my <a href="https://kam.mff.cuni.cz/~matousek/la-ams.html">favorite math books ever</a></li>
+                                    </ul>
+                                </li>
+                                <li>cryptography</li>
+                                <li>algebraic topology</li>
+                                <li>precalculus</li>
+                                <li>differential calculus</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>University of Washington
-                        <ul>
-                            <li>calculus (both as TA and lead instructor)</li>
-                            <li>linear algebra (both as TA and lead instructor)</li>
-                            <li>discrete mathematics (TA)</li>
-                            <li>business calculus (TA)</li>
-                        </ul>
+                    <li>
+                        <button type="button" class="collapsible">University of Washington</button>
+                        <div class="content">
+                            <ul>
+                                <li>calculus (both as TA and lead instructor)</li>
+                                <li>linear algebra (both as TA and lead instructor)</li>
+                                <li>discrete mathematics (TA)</li>
+                                <li>business calculus (TA)</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li><a href="https://www.fepps.org/">Freedom Education Project Puget Sound</a>
-                        <ul>
-                            <li>math in society</li>
-                            <li>algebra</li>
-                        </ul>
+                    <li>
+                        <button type="button" class="collapsible">
+                            <a href="https://www.fepps.org/">
+                                Freedom Education Project Puget Sound
+                            </a>
+                        </button>
+                        <!--<a href="https://www.fepps.org/">Freedom Education Project Puget Sound</a>-->
+                        <div class="content">
+                            <ul>
+                                <li>math in society</li>
+                                <li>algebra</li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
+                
             </div>
+
+
 
             <div class="card", id="Education">
                 <h2>
@@ -271,6 +305,7 @@
           </div>
         </div>
         
-        
+    
+        <script src="./my_script.js"></script>
     </body>
 </html>
