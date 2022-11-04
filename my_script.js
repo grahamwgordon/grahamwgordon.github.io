@@ -13,6 +13,16 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+// BLH BLAH BLAH
+
+
+
+
+
+
+
+// BLH BLAH BLAH
+
 function copyToClipBoard() {
     var content = document.getElementById("emailLink") ;
     content.select();
