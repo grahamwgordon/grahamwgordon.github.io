@@ -40,10 +40,10 @@ function draw() {
         // draw grid
         strokeWeight(1) ;
         stroke(210,210,250) ;
-        for (var i=int(-width/2/unit); i<int(width/2/unit); i++) {
+        for (var i=int(-width/2/unit)-1; i<=int(width/2/unit); i++) {
             line(width/2 + i*unit,0,width/2 + i*unit,height) ;
         }
-        for (var j=-int(height/2/unit); j<int(height/2/unit); j++) {
+        for (var j=-int(height/2/unit)-1; j<=int(height/2/unit); j++) {
             line(0,height/2 + j*unit,width,height/2 + j*unit) ;
         }
 
