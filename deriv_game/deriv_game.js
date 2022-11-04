@@ -10,7 +10,7 @@ let drawn_points = [] ;
 let deriv_points = [] ;
 
 var done = false ;
-var game_state = 0 ;
+var game_state = 4 ;
 
 function setup() {
     createCanvas(900,400) ;
@@ -26,8 +26,8 @@ function setup() {
 
     drawn_points.push([0,height/2]) ;
 
-    noiseSeed(nsd) ;
-    _create_new_graph_points() ;
+    //noiseSeed(nsd) ;
+    //_create_new_graph_points() ;
     
 }
 
@@ -99,6 +99,13 @@ function draw() {
 
         // draw new graph
         _draw_a_graph(graph_points,0,222,0) ;
+    } else if (game_state == 4) {
+        background(255) ;
+        _draw_grid_and_axes() ;
+        _draw_guides() ;
+        strokeWeight(0) ;
+        fill(0) ;
+        text("click to start", 10,50) ;
     }
 
     // debugging on top layer
@@ -133,6 +140,10 @@ function mousePressed() {
         background(255) ;
 
         //done = false ;
+        game_state += 1 ;
+        game_state %= 3 ;
+    } else if (game_state == 4) {
+        _create_new_graph_points() ;
         game_state += 1 ;
         game_state %= 3 ;
     }
