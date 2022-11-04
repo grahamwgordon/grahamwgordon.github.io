@@ -2,13 +2,15 @@ var cx, cy, r, t, pt, time_interval, dmax ;
 
 var unit = 40, gstep = 2, noiseScale = 0.009, nsd = 0 ;
 
-var latest_index = 0 ;
+
+var diff_value = 0 ;
 
 let graph_points = [] ;
 let drawn_points = [] ;
 let deriv_points = [] ;
 
 var done = false ;
+var game_state = 0 ;
 
 function setup() {
     createCanvas(900,400) ;
@@ -30,61 +32,25 @@ function setup() {
 }
 
 function draw() {
+    
     // normal gameplay
-    if (!done) {
+    if (game_state == 0) {
         background(255) ;
 
         // genius checking
         //point(width/2, mouseY, 20) ;
         
-        // draw grid
-        strokeWeight(1) ;
-        stroke(210,210,250) ;
-        for (var i=int(-width/2/unit)-1; i<=int(width/2/unit); i++) {
-            line(width/2 + i*unit,0,width/2 + i*unit,height) ;
-        }
-        for (var j=-int(height/2/unit)-1; j<=int(height/2/unit); j++) {
-            line(0,height/2 + j*unit,width,height/2 + j*unit) ;
-        }
-
-        // draw axes
-        strokeWeight(2) ;
-        stroke(0) ;
-        line(0,height/2,width,height/2) ;
-        line(width/2,0,width/2,height) ;
+        // grid 'n' axes
+        _draw_grid_and_axes() ;
 
         // draw graph_points
-        strokeWeight(2) ;
-        stroke(0,222,0) ;
-        for (var i=1; i<graph_points.length; i++) {
-            line(graph_points[i-1][0],graph_points[i-1][1],graph_points[i][0],graph_points[i][1]) ;
-        }
-
+        _draw_a_graph(graph_points,0,222,0) ;
         
-
         // draw drawn_points
-        strokeWeight(2) ;
-        stroke(222,0,0) ;
-        for (var i=1; i<drawn_points.length; i++) {
-            line(drawn_points[i-1][0],drawn_points[i-1][1],drawn_points[i][0],drawn_points[i][1]) ;
-        }
-        strokeWeight(1) ;
-        stroke(250,0,250) ;
-        line(cx,mouseY,mouseX,mouseY) ;
-        line(cx,0,cx,height) ;
-        
+        _draw_a_graph(drawn_points,222,0,0) ;
 
-        // draw cursor
-        /*
-        strokeWeight(5) ;
-        stroke(0,222,0) ;
-        point(mouseX,mouseY) ;
-        */
-
-        // if done drawing, show score
-
-        // if click, retry
-        // (this is handled below)
+        // guide
+        _draw_guides() ;
         
         // if time step happens, 
         t = millis() ;
@@ -92,38 +58,110 @@ function draw() {
             pt = t ;
             cx += gstep ;
             drawn_points.push([cx,mouseY]) ;
-            //print(drawn_points[latest_index],graph_points[latest_index],deriv_points[latest_index]) ;
-            latest_index++ ;
         }
         
-
         // reset drawing at the end
         if (cx >= width) {
-            //background(222) ;
+            //background(255) ;
             //drawn_points = [] ;
             //cx = 0 ;
-            done = true ;
-        }
-    } else {
-        // calculate derivative
-        _set_deriv_points() ;
 
-        // draw deriv_points
-        strokeWeight(2) ;
-        stroke(0,0,222) ;
-        for (var i=1; i<deriv_points.length; i++) {
-            line(deriv_points[i-1][0],deriv_points[i-1][1],deriv_points[i][0],deriv_points[i][1]) ;
+            // calculate derivative
+            _set_deriv_points() ;
+            diff_value = difference_o_meter() ;
+
+            // change game state
+            game_state += 1 ;
+            game_state %= 3 ;
         }
+    } else if (game_state == 1) {
+        
+        // draw deriv_points
+        _draw_a_graph(deriv_points,0,0,222) ;
 
         // draw score
         fill(240,240,0) ;
         strokeWeight(2) ;
         stroke(0) ;
-        text(str(difference_o_meter()), 10,height-10) ;
+        text(str(diff_value), 10,height-10) ;
         //text("sign score", width/2 + 10, height-10) ;
+
+        
+    } else if (game_state == 2) {
+        // background
+        background(255) ;
+
+        // guides
+        _draw_guides() ;
+
+        // grid 'n' axes
+        _draw_grid_and_axes() ;
+
+        // draw new graph
+        _draw_a_graph(graph_points,0,222,0) ;
     }
 
+    // debugging on top layer
+    /*
+    strokeWeight(0) ;
+    fill(0) ;
+    text(str(game_state),0,20) ;
+    */
     
+}
+
+function mousePressed() {
+    if (game_state == 0) {
+        // do nothing
+    } else if (game_state == 1) {
+        _create_new_graph_points() ;
+        
+        cx = 0 ;
+        drawn_points = [] ;
+        drawn_points.push([0,height/2]) ;
+
+        deriv_points = [] ;
+        deriv_points.push([0,height/2]) ;
+
+        game_state += 1 ;
+        game_state %= 3 ;
+
+    } else if (game_state == 2) {
+        
+        //_set_deriv_points() ;
+
+        background(255) ;
+
+        //done = false ;
+        game_state += 1 ;
+        game_state %= 3 ;
+    }
+}
+
+function _draw_a_graph(pts,r,g,b) {
+    strokeWeight(2) ;
+    stroke(r,g,b) ;
+    for (var i=1; i<pts.length; i++) {
+        line(pts[i-1][0],pts[i-1][1],pts[i][0],pts[i][1]) ;
+    }
+}
+
+function _draw_grid_and_axes() {
+    // draw grid
+    strokeWeight(1) ;
+    stroke(210,210,250) ;
+    for (var i=int(-width/2/unit)-1; i<=int(width/2/unit); i++) {
+        line(width/2 + i*unit,0,width/2 + i*unit,height) ;
+    }
+    for (var j=-int(height/2/unit)-1; j<=int(height/2/unit); j++) {
+        line(0,height/2 + j*unit,width,height/2 + j*unit) ;
+    }
+
+    // draw axes
+    strokeWeight(2) ;
+    stroke(0) ;
+    line(0,height/2,width,height/2) ;
+    line(width/2,0,width/2,height) ;
 }
 
 function _create_new_graph_points() {
@@ -148,22 +186,16 @@ function _set_deriv_points() {
     }
 }
 
-function mousePressed() {
-    if (done) {
-        cx = 0 ;
-        drawn_points = [] ;
-        drawn_points.push([0,height/2]) ;
-        latest_index = 0 ;
+function _draw_guides() {
+    // draw guiding line
+    strokeWeight(1) ;
+    stroke(250,0,250) ;
+    line(cx,mouseY,mouseX,mouseY) ;
+    line(cx,0,cx,height) ;
 
-
-        
-        _create_new_graph_points() ;
-        //_set_deriv_points() ;
-
-        background(222) ;
-
-        done = false ;
-    }
+    // draw guiding point
+    strokeWeight(10) ;
+    point(mouseX,mouseY) ;
 }
 
 function difference_o_meter() {
