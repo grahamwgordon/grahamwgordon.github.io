@@ -29,9 +29,6 @@ function setup() {
     
 }
 
-// to do
-//  - "sign" score
-
 function draw() {
     // normal gameplay
     if (!done) {
@@ -73,7 +70,7 @@ function draw() {
         }
         strokeWeight(1) ;
         stroke(250,0,250) ;
-        line(cx,mouseY,width/2,mouseY) ;
+        line(cx,mouseY,mouseX,mouseY) ;
         line(cx,0,cx,height) ;
         
 
@@ -130,7 +127,7 @@ function draw() {
 }
 
 function _create_new_graph_points() {
-    nsd += int(ceil(millis()/1000) * random() ) ;
+    nsd += int(ceil(millis()/10) * random() ) ;
     noiseSeed(nsd) ;
     graph_points = [] ;
     var current_d = 0 ;
