@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cheese and/or Meat</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body>
+  <h1>
+    How much cheese and/or meat to eat?
+  </h1>
+
+  <p style="text-align: center;">
+    <img src="images/cheese_slice.png" width="200">
+  </p>
+
+  <h2>
+    The situation
+  </h2>
+
+  <p>
+    I want to eat some cheese and meat. Here are the nutrition labels for them.
+
+
+  <div class="row">
+    <div class="column">
+      <img src="images/cheesefacts.png">
+      <figcaption>
+        Cheese nutrition label
+      </figcaption>
+    </div>
+    <div class="column">
+      <img src="images/meatfacts.png">
+      <figcaption>
+        Meat nutrition label
+      </figcaption>
+    </div>
+  </div>
+
+  Not pictured are the prices, which are $4.29 for the cheese and $8.69 for the meat.
+  Anyway, I am mostly interested in getting a sufficient amount of protein (at least 20 g) without breaking the bank or
+  getting too much sodium (600 mg).
+  </p>
+
+  <h2>
+    The algebra
+  </h2>
+
+  <p>
+    I decided to use \(x\) to denote the number of servings of cheese and \(y\) the number of servings of meat I would
+    eat together for a snack (or a meal?).
+    Based on the nutrition labels, I created two inequalities based on my conditions for protein and sodium:
+    \[ 7x + 11y \geq 20 \]
+    \[ 170x + 410y \leq 600 \]
+    I also created the following cost function:
+    \[ f(x,y) = 0.715x + 2.897y \]
+  </p>
+
+  <h2>
+    The optimization
+  </h2>
+
+  <p>
+    I graphed the two inequalities, the protein in red and the sodium in blue, as shown in the graph below.
+    The purple-gray-ish region where they overlap (also known as the "feasible region") contains all the points that
+    satisfy both of my condition for protein and sodium.
+    You can drag the purple dot around, and it will show you how much it costs to purchase the corresponding number of
+    servings of cheese and meat.
+    <br>
+  <p style="text-align: center;">
+    <b>Optimization goal:</b> find the point in the feasible region that has the smallest cost.
+  </p>
+  Go ahead, try it!
+  </p>
+
+
+  <div id="calculator" style="width: 600px; height: 400px;"></div>
+
+
+  <h2>
+    The results
+  </h2>
+
+  <p>
+    As we learned in class, the cost function hits its largest and smallest values on the corners of the feasible
+    region, so we really only have to check three points: the top, the bottom-left, and the bottom-right. The cheapest
+    one is (drum roll please)
+  <p style="text-align: center;">
+    <b>(2.85,0)</b> which means I should eat nearly 3 servings of cheese and no meat whatsoever.
+  </p>
+  This is rather anticlimactic, and so I might adjust my behavior based on personal taste, or I might adjust the
+  constraints of my optimization to try to introduce some variety.
+
+  <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
