@@ -11,18 +11,28 @@ function preload(){
 }
 
 function setup() {
-    createCanvas(666, 666, WEBGL);
+    createCanvas(666, 666, WEBGL) ;
+    noStroke() ;
+    noFill() ;
 }
 
 function draw() {
-    background(220);
+    background(220) ;
     
     orbitControl() ;
 
-    push();
-        translate(0,0,s);
-        texture(img_what);
-        plane(s,s);
-    pop();
+    push() ;
+        rotateX(0) ;
+        translate(0,0,s) ;
+        texture(img_what) ;
+        plane(s,s) 
+    pop() ;
+
+    push() ;
+        rotateX(HALF_PI) ;
+        translate(0,0,s) ;
+        texture(img_when) ;
+        plane(s,s) ;
+    pop() ;
 
 }
