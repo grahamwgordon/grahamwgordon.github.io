@@ -36,7 +36,7 @@ function draw() {
         translate(0,0,t) ;
         //texture(img_what) ;
         text('howdy!') ;
-        plane(s,s) ;
+        //plane(s,s) ;
     pop() ;
 
     push() ;
