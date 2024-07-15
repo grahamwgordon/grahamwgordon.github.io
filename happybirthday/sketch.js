@@ -1,6 +1,7 @@
 let s = 200, t = 100 , z = 64;
 let img_when, img_where, img_what, img_food, img_byob, img_no ;
 let f ;
+let m ;
 
 function preload(){
     img_when  = loadImage('imgs/bday_31_cube_datetime.png') ;
@@ -11,12 +12,13 @@ function preload(){
     img_no    = loadImage('imgs/bday_31_cube_nogifts.png') ;
 
     f = loadFont('rubik_fax.ttf') ;
+    m = loadModel('zebra.obj') ;
 }
 
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    noFill() ;
+    fill(0) ;
     textFont(f) ;
     textAlign(CENTER) ;
     textSize(64)
@@ -27,10 +29,12 @@ function draw() {
     
     orbitControl() ;
 
+    model(m) ;
+
     push() ;
         rotateX(0) ;
         translate(0,0,t) ;
-        texture(img_what) ;
+        //texture(img_what) ;
         text('howdy!') ;
         plane(s,s) ;
     pop() ;
