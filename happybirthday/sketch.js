@@ -1,5 +1,5 @@
 let s = 200, t = 100 , z = 64;
-let img_when, img_where, img_what, img_food, img_byob, img_no ;
+let img_when, img_where, img_what, img_food, img_byob, img_no, img_mod ;
 let f ;
 let m ;
 
@@ -10,6 +10,7 @@ function preload(){
     img_food  = loadImage('imgs/bday_31_cube_food.png') ;
     img_byob  = loadImage('imgs/bday_31_cube_byob.png') ;
     img_no    = loadImage('imgs/bday_31_cube_nogifts.png') ;
+    img_mod   = loadImage('zebra_texture.png') ;
 
     f = loadFont('rubik_fax.ttf') ;
     m = loadModel('zebra.obj') ;
@@ -18,7 +19,7 @@ function preload(){
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    fill(250,240,240) ;
+    fill(250,140,140) ;
     textFont(f) ;
     textAlign(CENTER, CENTER) ;
     textSize(64)
@@ -30,8 +31,9 @@ function draw() {
     orbitControl() ;
     
     push() ;
-        scale(10) ;
+        scale(30) ;
         model(m) ;
+        texture(img_mod) ;
     pop() ;
 
     push() ;
@@ -77,8 +79,9 @@ function draw() {
     push() ;
         rotateY(-HALF_PI) ;
         translate(0,0,t) ;
-        texture(img_food) ;
-        plane(s,s) ;
+        //texture(img_food) ;
+        //plane(s,s) ;
+        text('pizza\n+\ncake',0,0) ;
     pop() ;
 
 }
