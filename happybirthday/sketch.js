@@ -1,29 +1,28 @@
 let s = 100 ;
-let t = 12 ;
-let f ;
+let img_when, img_where, img_what, img_food, img_byob, img_no ;
 
-function preload() {
-    f = loadFont('rubik_fax.ttf') ;
+function preload(){
+    img_when  = loadImage('imgs/bday_31_cube_datetime.png') ;
+    img_where = loadImage('imgs/bday_31_cube_loc.png') ;
+    img_what  = loadImage('imgs/bday_31_cube_party.png') ;
+    img_food  = loadImage('imgs/bday_31_cube_food.png') ;
+    img_byob  = loadImage('imgs/bday_31_cube_byob.png') ;
+    img_no    = loadImage('imgs/bday_31_cube_nogifts.png') ;
 }
 
 function setup() {
-    createCanvas(710, 400, WEBGL);
-    angleMode(DEGREES);
-    strokeWeight(1) ;
-    fill(250,200,200) ;
-    textFont(f) ;
-    textSize(t) ;
+    createCanvas(666, 666, WEBGL);
 }
-  
+
 function draw() {
-    background(222);
+    background(220);
+    
+    orbitControl() ;
 
-    orbitControl();
+    push();
+        translate(0,0,s);
+        texture(img_what);
+        plane(s,s);
+    pop();
 
-    box(s) ;
-
-    push() ;
-    translate(s,0,0) ;
-    text('howdy',0,0) ;
-    pop() ;
 }
