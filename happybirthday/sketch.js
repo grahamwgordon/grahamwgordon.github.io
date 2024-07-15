@@ -18,7 +18,7 @@ function preload(){
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    fill(0) ;
+    fill(250,240,240) ;
     textFont(f) ;
     textAlign(CENTER, CENTER) ;
     textSize(64)
@@ -30,7 +30,7 @@ function draw() {
     orbitControl() ;
     
     push() ;
-        scale(3) ;
+        scale(10) ;
         model(m) ;
     pop() ;
 
@@ -38,36 +38,40 @@ function draw() {
         rotateX(0) ;
         translate(0,0,t) ;
         //texture(img_what) ;
-        text('howdy!',0,0) ;
         //plane(s,s) ;
+        text('bday\nparty\n31',0,0) ;
     pop() ;
 
     push() ;
         rotateX(HALF_PI) ;
         translate(0,0,t) ;
-        texture(img_when) ;
-        plane(s,s) ;
+        //texture(img_when) ;
+        //plane(s,s) ;
+        text('27\njuly\n6pm',0,0) ;
     pop() ;
 
     push() ;
         rotateX(PI) ;
         translate(0,0,t) ;
-        texture(img_where) ;
-        plane(s,s) ;
+        //texture(img_where) ;
+        //plane(s,s) ;
+        text('here:\n47.61779,\n-122.\n3594',0,0) ;
     pop() ;
 
     push() ;
         rotateX(3*HALF_PI) ;
         translate(0,0,t) ;
-        texture(img_no) ;
-        plane(s,s) ;
+        //texture(img_no) ;
+        //plane(s,s) ;
+        text('no\ngifts',0,0) ;
     pop() ;
 
     push() ;
         rotateY(HALF_PI) ;
         translate(0,0,t) ;
-        texture(img_byob) ;
-        plane(s,s) ;
+        //texture(img_byob) ;
+        //plane(s,s) ;
+        text('BY\nOB',0,0) ;
     pop() ;
 
     push() ;
