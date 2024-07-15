@@ -25,13 +25,41 @@ function draw() {
         rotateX(0) ;
         translate(0,0,s) ;
         texture(img_what) ;
-        plane(s,s) 
+        plane(s,s) ;
     pop() ;
 
     push() ;
         rotateX(HALF_PI) ;
         translate(0,0,s) ;
         texture(img_when) ;
+        plane(s,s) ;
+    pop() ;
+
+    push() ;
+        rotateX(PI) ;
+        translate(0,0,s) ;
+        texture(img_where) ;
+        plane(s,s) ;
+    pop() ;
+
+    push() ;
+        rotateX(3*HALF_PI) ;
+        translate(0,0,s) ;
+        texture(img_no) ;
+        plane(s,s) ;
+    pop() ;
+
+    push() ;
+        rotateY(HALF_PI) ;
+        translate(0,0,s) ;
+        texture(img_byob) ;
+        plane(s,s) ;
+    pop() ;
+
+    push() ;
+        rotateY(-HALF_PI) ;
+        translate(0,0,s) ;
+        texture(img_food) ;
         plane(s,s) ;
     pop() ;
 
