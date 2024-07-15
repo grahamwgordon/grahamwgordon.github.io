@@ -31,7 +31,7 @@ function draw() {
     orbitControl() ;
     
     push() ;
-        scale(30) ;
+        scale(10) ;
         texture(img_mod) ;
         model(m) ;
     pop() ;
