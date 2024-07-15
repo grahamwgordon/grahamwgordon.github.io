@@ -20,7 +20,7 @@ function setup() {
     noStroke() ;
     fill(0) ;
     textFont(f) ;
-    textAlign(CENTER) ;
+    textAlign(CENTER, CENTER) ;
     textSize(64)
 }
 
@@ -28,14 +28,17 @@ function draw() {
     background(220) ;
     
     orbitControl() ;
-
-    model(m) ;
+    
+    push() ;
+        scale(3) ;
+        model(m) ;
+    pop() ;
 
     push() ;
         rotateX(0) ;
         translate(0,0,t) ;
         //texture(img_what) ;
-        text('howdy!') ;
+        text('howdy!',0,0) ;
         //plane(s,s) ;
     pop() ;
 
