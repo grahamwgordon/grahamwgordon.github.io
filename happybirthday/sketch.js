@@ -13,13 +13,13 @@ function preload(){
     img_mod   = loadImage('zebra_texture.png') ;
 
     f = loadFont('rubik_fax.ttf') ;
-    m = loadModel('zebra.obj') ;
+    m = loadModel('zebra.obj', true) ;
 }
 
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    fill(250,140,140) ;
+    fill(255,140,40) ;
     textFont(f) ;
     textAlign(CENTER, CENTER) ;
     textSize(64)
@@ -32,8 +32,8 @@ function draw() {
     
     push() ;
         scale(30) ;
-        model(m) ;
         texture(img_mod) ;
+        model(m) ;
     pop() ;
 
     push() ;
