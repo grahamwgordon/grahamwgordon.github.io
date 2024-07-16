@@ -33,8 +33,8 @@ function draw() {
     orbitControl() ;
     
     push() ;
-        scale(0.1) ;
-        rotateX(HALF_PI) ;
+        scale(0.0666) ;
+        rotateX(-HALF_PI) ;
         fill(255,0,0) ;
         model(h) ;
     pop() ;
