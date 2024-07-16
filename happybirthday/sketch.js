@@ -21,7 +21,7 @@ function preload(){
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    fill(235,52,177) ;
+    
     textFont(f) ;
     textAlign(CENTER, CENTER) ;
     textSize(64)
@@ -33,7 +33,9 @@ function draw() {
     orbitControl() ;
     
     push() ;
-        scale(1) ;
+        scale(0.1) ;
+        rotateX(HALF_PI) ;
+        fill(255,0,0) ;
         model(h) ;
     pop() ;
 
@@ -42,6 +44,8 @@ function draw() {
         texture(img_mod) ;
         model(m) ;
     pop() ;
+
+    fill(235,52,177) ;
 
     push() ;
         rotateX(0) ;
