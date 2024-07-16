@@ -19,19 +19,19 @@ function preload(){
 function setup() {
     createCanvas(333, 333, WEBGL) ;
     noStroke() ;
-    fill(255,140,40) ;
+    fill(235,52,177) ;
     textFont(f) ;
     textAlign(CENTER, CENTER) ;
     textSize(64)
 }
 
 function draw() {
-    background(220) ;
+    background(243,255,217) ;
     
     orbitControl() ;
     
     push() ;
-        scale(1) ;
+        scale(0.666) ;
         texture(img_mod) ;
         model(m) ;
     pop() ;
