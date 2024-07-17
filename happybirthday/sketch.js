@@ -67,7 +67,7 @@ function draw() {
     push() ;
         rotateY(HALF_PI) ;
         translate(0,0,t) ;
-        text('by\non',0,0) ;
+        text('by\nob',0,0) ;
     pop() ;
 
     push() ;
