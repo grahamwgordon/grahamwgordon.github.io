@@ -1,5 +1,9 @@
 /* basic tag selected stuff */
-
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 table, th, td {
   border: 1px solid;
