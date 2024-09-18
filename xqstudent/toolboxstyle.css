@@ -5,8 +5,16 @@ img {
   object-fit: contain;
 }
 
-table, th, td {
-  border: 1px solid;
+.tinyicon > img {
+  height: 32px ;
+}
+
+
+
+th, td {
+  padding: 8px ;
+  border: 1px solid #ddd;
+  background-color: white;
 }
 
 body {
