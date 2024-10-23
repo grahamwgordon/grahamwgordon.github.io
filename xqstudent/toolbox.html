@@ -1070,6 +1070,118 @@ In symbols, \(0a = 0\) for all real numbers \(a\).
 </div>
 <!-- END TOOL: toolname -->
 
+<!-- BEGIN TOOL: Replace one thing with something else -->
+<button type="button" class="tool">Replace one thing with something else</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Replace one thing with something else -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.N')">Non-Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.EX.SUBST.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Replace one thing with something else -->
+<!-- BEGIN How to: Replace one thing with something else-->
+<div id="A.EX.SUBST.H" class="tabcontent">
+	<p>
+		
+		<table>
+<tr>
+<td>1.</td>
+<td>Start with an expression.</td>
+<td>\(2 \times 3 +  14\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Group the part of the expression you want to substitute in parentheses, without changing the value of the expression.</td>
+<td>\(2 \times 3 + (14) \)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Replace the contents of the parentheses with something equivalent.</td>
+<td>\(2 \times 3 + (2 \times 7)\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>The result is equivalent to what you started with.</td>
+<td>\(2 \times 3 + 14 = 2 \times 3 + 2 \times 7\)</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Replace one thing with something else --><!-- BEGIN Examples: Replace one thing with something else-->
+<div id="A.EX.SUBST.E" class="tabcontent">
+	<p>
+		
+		
+		
+	</p>
+</div>
+<!-- END Examples: Replace one thing with something else --><!-- BEGIN Non-Examples: Replace one thing with something else-->
+<div id="A.EX.SUBST.N" class="tabcontent">
+	<p>
+		
+		?
+		
+	</p>
+</div>
+<!-- END Non-Examples: Replace one thing with something else --><!-- BEGIN Common Mistakes: Replace one thing with something else-->
+<div id="A.EX.SUBST.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+<td>Substituting without grouping:
+<ul>
+<li>\(3x = 2\)</li>
+<li>\(1 + 2x = 2\)</li>
+</ul>
+</td> 
+<td>
+Use parentheses to group before substituting:
+<ul>
+<li>\(3x = 2\)</li>
+<li>\((1 + 2)x = 2\)</li>
+</ul>
+</td> 
+</tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Replace one thing with something else --><!-- BEGIN Visuals: Replace one thing with something else-->
+<div id="A.EX.SUBST.V" class="tabcontent">
+	<p>
+		
+		<img src="./media/img_A_EX_SUBST.png">
+		
+	</p>
+</div>
+<!-- END Visuals: Replace one thing with something else --><!-- BEGIN The Mathematics: Replace one thing with something else-->
+<div id="A.EX.SUBST.D" class="tabcontent">
+	<p>
+		
+		The <b>substitution property</b> essentially states that you can replace quantities with equivalent quantities and except the same result.
+The formal mathematical statement is that "functions are <b>well-defined</b>."
+This means, for instance, if you plug in equivalent quantities to a sum, you should get out equivalent quantities.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Replace one thing with something else -->
+</div>
+<!-- END TOOL: toolname -->
+
 			</div>
 			<!-- END DRAWER: Create equivalent expressions --><!-- DRAWER BUTTON: Create equivalent equations -->
 			<button type="button" class="drawer"> Create equivalent equations</button>
@@ -1157,7 +1269,7 @@ Adding to every term:
 </ul>
 </td>
 <td>
-Only add once to each side:
+Use parentheses to group each side and add once:
 <br>
 <ul>
 <li>\(3x-2=4x+5\)</li>
@@ -1247,7 +1359,7 @@ In symbols you can write this as
 		
 		<ul>
 
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
+<li>\(2x-1=3 \longrightarrow (2x-1)-1=(3)-1 \longrightarrow 2x-2 = 2\)</li>
 
 </ul>
 		
@@ -1257,11 +1369,7 @@ In symbols you can write this as
 <div id="A.EQ.S.N" class="tabcontent">
 	<p>
 		
-		<ul>
-
-
-
-</ul>
+		N/A
 		
 	</p>
 </div>
@@ -1274,7 +1382,24 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+<td>
+Subtracting from every term:
+<br>
+<ul>
+<li>\(3x+2=4x+5\)</li>
+<li>\(3x-2+2-2=4x-2+5-2 \)</li>
+</ul>
+</td>
+<td>
+Use parentheses to group each side and only subtract once:
+<br>
+<ul>
+<li>\(3x+2=4x+5\)</li>
+<li>\((3x+2)-2=(4x+5)-2\)</li>
+</ul>
+</td>
+</tr>
 		</table>
 	</p>
 </div>
@@ -1282,7 +1407,7 @@ In symbols you can write this as
 <div id="A.EQ.S.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_S.png">
 		
 	</p>
 </div>
@@ -1290,12 +1415,12 @@ In symbols you can write this as
 <div id="A.EQ.S.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
+		The <b>subtraction property</b> states that subtracting the same quantity
+from both sides of an equation results in an equivalent equation.
+Recall that an <b>equivalent equation</b> is one which has the same
 solution(s) as the original.
 In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
+\(a = b \implies a-c = b-c\) for all real numers
 \(a\), \(b\), and \(c\).
 		
 	</p>
@@ -1330,7 +1455,7 @@ In symbols you can write this as
 </tr>
 <tr>
 <td>2.</td>
-<td>Choose a quantity to multiply each side by.</td>
+<td>Choose a non-zero quantity to multiply each side by.</td>
 <td>\(2\)</td>
 </tr>
 <tr>
@@ -1353,7 +1478,7 @@ In symbols you can write this as
 		
 		<ul>
 
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
+<li>\(2x-1=3 \longrightarrow 4 \cdot (2x-1)=4 \cdot (3) \longrightarrow 8x-4 = 12\)</li>
 
 </ul>
 		
@@ -1364,9 +1489,7 @@ In symbols you can write this as
 	<p>
 		
 		<ul>
-
-
-
+<li>Multiplying both sides of an equation by zero eliminates all meaning from the equation and does not result in an equivalent equation.</li>
 </ul>
 		
 	</p>
@@ -1380,7 +1503,19 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+<td>Only multiplying part of each side:
+<ul>
+<li>\(x-4=5\)</li>
+<li>\(2x - 4 = 10\) after multiplying by \(2\)</li>
+</ul>
+</td>
+<td>Use parentheses to group each side and only multiply once:
+<ul>
+<li>\(x-4=5\)</li>
+<li>\(2(x - 4) = 2(5)\) after multiplying by \(2\)</li>
+</ul></td>
+</tr>
 		</table>
 	</p>
 </div>
@@ -1388,7 +1523,7 @@ In symbols you can write this as
 <div id="A.EQ.M.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_M.png">
 		
 	</p>
 </div>
@@ -1396,13 +1531,13 @@ In symbols you can write this as
 <div id="A.EQ.M.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
+		The <b>multiplication property</b> states that multiplying both sides of an equation by the same nonzero quantity
+results in an equivalent equation.
+Recall that an <b>equivalent equation</b> is one which has the same
 solution(s) as the original.
 In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
+\(a = b \implies ac = bc\) for all real numers
+\(a\), \(b\), and \(c\), where \(c \neq 0\).
 		
 	</p>
 </div>
@@ -1432,22 +1567,22 @@ In symbols you can write this as
 <tr>
 <td>1.</td>
 <td>Start with an equation.</td>
-<td>\(4x + 2 = 4\)</td>
+<td>\(8x + 6 = 10\)</td>
 </tr>
 <tr>
 <td>2.</td>
-<td>Choose a quantity to divide each side by.</td>
+<td>Choose a non-zero quantity to divide each side by.</td>
 <td>\(2\)</td>
 </tr>
 <tr>
 <td>3.</td>
-<td>Divide each side of the equation by your chosen quantity.</td>
-<td>\((4x + 2) \div 2= 4 \div 2\)</td>
+<td>Divide each side of the equation by that quantity.</td>
+<td>\((8x + 6)\div 2= (10)\div 2\)</td>
 </tr>
 <tr>
 <td>4.</td>
 <td>The resulting equation has the same solution(s) as the original equation.</td>
-<td>\(2x+1=2\)</td>
+<td>\(4x+3=5\)</td>
 </tr>
 </table>
 		
@@ -1459,7 +1594,7 @@ In symbols you can write this as
 		
 		<ul>
 
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
+<li>\(8x-4=12 \longrightarrow \frac{8x-4}{4}=\frac{12}{4} \longrightarrow 2x-1=3\)</li>
 
 </ul>
 		
@@ -1469,11 +1604,7 @@ In symbols you can write this as
 <div id="A.EQ.D.N" class="tabcontent">
 	<p>
 		
-		<ul>
-
-
-
-</ul>
+		N/A
 		
 	</p>
 </div>
@@ -1486,7 +1617,19 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+<td>Only dividing part of each side:
+<ul>
+<li>\(2x-8=10\)</li>
+<li>\(2x - 4 = 5\) after dividing by \(2\)</li>
+</ul>
+</td>
+<td>Use parentheses to group each side and only divide once:
+<ul>
+<li>\(2x-8=10\)</li>
+<li>\((2x - 8) \div 2 = (10)\div 2\) after dividing by \(2\)</li>
+</ul></td>
+</tr>
 		</table>
 	</p>
 </div>
@@ -1494,7 +1637,7 @@ In symbols you can write this as
 <div id="A.EQ.D.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_D.png">
 		
 	</p>
 </div>
@@ -1502,115 +1645,17 @@ In symbols you can write this as
 <div id="A.EQ.D.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
+		The <b>division property</b> states that dividing both sides of an equation by the same nonzero quantity
+results in an equivalent equation.
+Recall that an <b>equivalent equation</b> is one which has the same
 solution(s) as the original.
 In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
+\(a = b \implies a \div c = b \div c\) for all real numers
+\(a\), \(b\), and \(c\), where \(c \neq 0\).
 		
 	</p>
 </div>
 <!-- END The Mathematics: Divide both sides by something -->
-</div>
-<!-- END TOOL: toolname -->
-
-<!-- BEGIN TOOL: Replace one thing with something else -->
-<button type="button" class="tool">Replace one thing with something else</button>
-<div class="toolcontent">
-	<!-- BEGIN TABLINKS: Replace one thing with something else -->
-	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.H')">How To</button>
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.E')">Examples</button>
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.N')">Non-Examples</button>
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.M')">Common Mistakes</button>
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.V')">Visualizations</button>
-		<button class="tablinks" onclick="openTab(event,'A.EQ.SUBST.D')">The Mathematics</button>
-		
-	</div>
-	<!-- END TABLINKS: Replace one thing with something else -->
-<!-- BEGIN How to: Replace one thing with something else-->
-<div id="A.EQ.SUBST.H" class="tabcontent">
-	<p>
-		
-		<table>
-<tr>
-<td>question:</td>
-<td>do we want to put this in equivalent expressions?</td>
-<td>and then use only transitivity here?</td>
-</tr>
-
-<tr>
-<td>answer:</td>
-<td>yes</td>
-<td>i think so</td>
-</tr>
-
-</table>
-		
-	</p>
-</div>
-<!-- END How to: Replace one thing with something else --><!-- BEGIN Examples: Replace one thing with something else-->
-<div id="A.EQ.SUBST.E" class="tabcontent">
-	<p>
-		
-		<ul>
-
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
-
-</ul>
-		
-	</p>
-</div>
-<!-- END Examples: Replace one thing with something else --><!-- BEGIN Non-Examples: Replace one thing with something else-->
-<div id="A.EQ.SUBST.N" class="tabcontent">
-	<p>
-		
-		<ul>
-
-
-
-</ul>
-		
-	</p>
-</div>
-<!-- END Non-Examples: Replace one thing with something else --><!-- BEGIN Common Mistakes: Replace one thing with something else-->
-<div id="A.EQ.SUBST.M" class="tabcontent">
-	<p>
-		
-<table>
-<tr>
-<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
-<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
-</tr>
-		
-		</table>
-	</p>
-</div>
-<!-- END Common Mistakes: Replace one thing with something else --><!-- BEGIN Visuals: Replace one thing with something else-->
-<div id="A.EQ.SUBST.V" class="tabcontent">
-	<p>
-		
-		<img src="./media/img_A_EQ_A.png">
-		
-	</p>
-</div>
-<!-- END Visuals: Replace one thing with something else --><!-- BEGIN The Mathematics: Replace one thing with something else-->
-<div id="A.EQ.SUBST.D" class="tabcontent">
-	<p>
-		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
-solution(s) as the original.
-In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
-		
-	</p>
-</div>
-<!-- END The Mathematics: Replace one thing with something else -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -1663,7 +1708,7 @@ In symbols you can write this as
 		
 		<ul>
 
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
+<li>If you know \(y = 3x-2\) and also \(y=1+x\), then you also know \(3x-2=1+x\).</li>
 
 </ul>
 		
@@ -1673,11 +1718,7 @@ In symbols you can write this as
 <div id="A.EQ.TRANSIT.N" class="tabcontent">
 	<p>
 		
-		<ul>
-
-
-
-</ul>
+		
 		
 	</p>
 </div>
@@ -1698,7 +1739,7 @@ In symbols you can write this as
 <div id="A.EQ.TRANSIT.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_TRANSIT.png">
 		
 	</p>
 </div>
@@ -1706,13 +1747,8 @@ In symbols you can write this as
 <div id="A.EQ.TRANSIT.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
-solution(s) as the original.
-In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
+		The <b>transitive property</b> states that,
+if \(a=b\) and \(b=c\), then \(a=c\) for all real numbers \(a,b,c\).
 		
 	</p>
 </div>
@@ -1757,11 +1793,7 @@ In symbols you can write this as
 <div id="A.EQ.SYMM.E" class="tabcontent">
 	<p>
 		
-		<ul>
-
-<li>\(2x-1=3 \longrightarrow (2x-1)+1=(3)+1 \longrightarrow 2x = 4\)</li>
-
-</ul>
+		
 		
 	</p>
 </div>
@@ -1769,11 +1801,7 @@ In symbols you can write this as
 <div id="A.EQ.SYMM.N" class="tabcontent">
 	<p>
 		
-		<ul>
-
-
-
-</ul>
+		
 		
 	</p>
 </div>
@@ -1794,7 +1822,7 @@ In symbols you can write this as
 <div id="A.EQ.SYMM.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_SYM.png">
 		
 	</p>
 </div>
@@ -1802,13 +1830,8 @@ In symbols you can write this as
 <div id="A.EQ.SYMM.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
-solution(s) as the original.
-In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
+		The <b>symmetric property</b> states that,
+if \(a=b\), then \(b=a\) for all real numbers \(a,b\).
 		
 	</p>
 </div>
@@ -1896,7 +1919,7 @@ In symbols you can write this as
 <div id="A.EQ.REF.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/img_A_EQ_A.png">
+		<img src="./media/img_A_EQ_REF.png">
 		
 	</p>
 </div>
@@ -1904,13 +1927,8 @@ In symbols you can write this as
 <div id="A.EQ.REF.D" class="tabcontent">
 	<p>
 		
-		The <b>addition property</b> states that adding the same quantity
-to both sides of an equation results in an equivalent equation.
-Recall that an <b> equivalent equation</b> is one which has the same
-solution(s) as the original.
-In symbols you can write this as
-\(a = b \implies a+c = b+c\) for all real numers
-\(a\), \(b\), and \(c\).
+		The <b>reflexive property</b> states that \(a=a\)
+for all real numbers \(a\).
 		
 	</p>
 </div>
@@ -2060,14 +2078,32 @@ Leave the exponent alone, and account for how many like terms there are:
 
 <tr>
 <td>1.</td>
+<td>Start with an equation.</td>
+<td>\(3(x-2) = 4x + 1\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Expand things out so that the variable isn't grouped with other things in parentheses or fractions.</td>
+<td>\(3x - 6 = 4x + 1\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Use the addition and subtraction properties to move all the terms with the variable to one side of the equation, and everything else to the other side.</td>
+<td>\(3x - 4x = 1 + 6\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Gather like terms.</td>
+<td>\(-x = 7\)</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Use the multiplication or division properties to make the variable have a coefficient of \(1\).</td>
+<td>\(x = -7\)</td>
 </tr>
 
 </table>
@@ -2078,7 +2114,14 @@ Leave the exponent alone, and account for how many like terms there are:
 <div id="A.STEQ.ISO.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+  <li>Start with the equation: \( 3x + 5 = 17 \)</li>
+  <li>Subtract 5 from both sides: \( 3x + 5 - 5 = 17 - 5 \) which simplifies to \( 3x = 12 \)</li>
+  <li>Divide both sides by 3: \( \frac{3x}{3} = \frac{12}{3} \) which simplifies to \( x = 4 \)</li>
+  <li>Verify the solution by substituting \( x = 4 \) into the original equation: \( 3(4) + 5 = 17 \)</li>
+  <li>Since both sides are equal, \( x = 4 \) is the correct solution.</li>
+</ul>
+
 		
 	</p>
 </div>
