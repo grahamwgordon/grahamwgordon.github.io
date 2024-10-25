@@ -2158,7 +2158,7 @@ Leave the exponent alone, and account for how many like terms there are:
 <div id="A.STEQ.ISO.D" class="tabcontent">
 	<p>
 		
-		
+		The phrase <b>isolate the variable</b> is synonymous with the process of algebraically solving an equation to express one variable in terms of all the stuff in the equation that <i>doesn't</i> involve the variable you're solving for.
 		
 	</p>
 </div>
@@ -2193,14 +2193,45 @@ Leave the exponent alone, and account for how many like terms there are:
 
 <tr>
 <td>1.</td>
+<td>Start with a system of equations.</td>
+<td>\(\left \{
+\begin{aligned}
+x+y & = 10 \\
+x-y & = 2
+\end{aligned}
+\right .\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Isolate the variable in one of the equations.</td>
+<td>\(\left \{
+\begin{aligned}
+x+y & = 10 \\
+x & = 2 + y
+\end{aligned}
+\right .\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Substitute the expression for the isolated variable into the other equation.</td>
+<td>
+\((2+y) + y = 10\)
+</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Isolate the variable in this new equation.</td>
+<td>\(2 + 2y = 10 \rightarrow 2y=8 \rightarrow y=4\)</td>
+<tr>
+
+<tr>
+<td>5.</td>
+<td>Use the previous isolated variable to solve for it, too, and that's it.</td>
+<td>\(x = 2+y = 6\)</td>
+</tr>
 </tr>
 
 </table>
@@ -2211,7 +2242,73 @@ Leave the exponent alone, and account for how many like terms there are:
 <div id="A.STSYS.SYSSUB.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        x + y &= 7 \\
+        x &= 3
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Substitute \( x = 3 \) into the first equation: 
+        \[
+        3 + y = 7
+        \]
+        <strong>Step 2:</strong> Solve for \( y \): 
+        \[
+        y = 4
+        \]
+        Solution: \( x = 3 \), \( y = 4 \).
+    </li>
+
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        2x + y &= 8 \\
+        y &= x + 1
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Substitute \( y = x + 1 \) into the first equation: 
+        \[
+        2x + (x + 1) = 8
+        \]
+        <strong>Step 2:</strong> Solve for \( x \): 
+        \[
+        3x + 1 = 8 \quad \Rightarrow \quad 3x = 7 \quad \Rightarrow \quad x = \frac{7}{3}
+        \]
+        <strong>Step 3:</strong> Substitute \( x = \frac{7}{3} \) into \( y = x + 1 \): 
+        \[
+        y = \frac{7}{3} + 1 = \frac{10}{3}
+        \]
+        Solution: \( x = \frac{7}{3} \), \( y = \frac{10}{3} \).
+    </li>
+
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        3x - 2y &= 4 \\
+        x &= y + 2
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Substitute \( x = y + 2 \) into the first equation: 
+        \[
+        3(y + 2) - 2y = 4
+        \]
+        <strong>Step 2:</strong> Simplify and solve for \( y \): 
+        \[
+        3y + 6 - 2y = 4 \quad \Rightarrow \quad y + 6 = 4 \quad \Rightarrow \quad y = -2
+        \]
+        <strong>Step 3:</strong> Substitute \( y = -2 \) into \( x = y + 2 \): 
+        \[
+        x = -2 + 2 = 0
+        \]
+        Solution: \( x = 0 \), \( y = -2 \).
+    </li>
+</ul>
+
 		
 	</p>
 </div>
@@ -2233,6 +2330,90 @@ Leave the exponent alone, and account for how many like terms there are:
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
 		
+    <tr>
+        <td>
+            Substituting incorrectly: <br>
+            Given: 
+            \[
+            \begin{align*}
+            x + y &= 5 \\
+            x &= y - 2
+            \end{align*}
+            \]
+            Substituting into the first equation as: 
+            \[
+            y - 2 + y = 5
+            \]
+            instead of: 
+            \[
+            x = y - 2
+            \]
+        </td>
+        <td>
+            Correct substitution: <br>
+            Substitute \( x = y - 2 \) into \( x + y = 5 \): 
+            \[
+            (y - 2) + y = 5
+            \]
+            Simplify: 
+            \[
+            2y - 2 = 5 \quad \Rightarrow \quad 2y = 7 \quad \Rightarrow \quad y = \frac{7}{2}
+            \]
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Misinterpreting the substitution: <br>
+            Given: 
+            \[
+            \begin{align*}
+            3x + y &= 7 \\
+            y &= x + 2
+            \end{align*}
+            \]
+            Incorrectly substituting as: 
+            \[
+            3x + x + 2 = 7
+            \]
+            instead of correctly substituting \( y \).
+        </td>
+        <td>
+            Correct substitution: <br>
+            Substitute \( y = x + 2 \) into \( 3x + y = 7 \): 
+            \[
+            3x + (x + 2) = 7
+            \]
+            Simplify: 
+            \[
+            4x + 2 = 7 \quad \Rightarrow \quad 4x = 5 \quad \Rightarrow \quad x = \frac{5}{4}
+            \]
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Forgetting to substitute back: <br>
+            After solving for one variable, forgetting to substitute it back into the second equation to find the other variable.
+        </td>
+        <td>
+            After solving for \( x \) or \( y \), remember to substitute the value back into the other equation to find the remaining variable.
+            <br>
+            Example: If \( x = 3 \), substitute it back into \( y = x + 1 \) to find \( y = 4 \).
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Incorrect arithmetic after substitution: <br>
+            After substituting, an error in basic arithmetic leads to incorrect results.
+        </td>
+        <td>
+            Double-check all arithmetic steps after substitution. For example: 
+            \[
+            2x + 3 = 5 \quad \Rightarrow \quad 2x = 2 \quad \Rightarrow \quad x = 1
+            \]
+            Carefully simplify to avoid errors.
+        </td>
+    </tr>
+
 		</table>
 	</p>
 </div>
@@ -2248,7 +2429,7 @@ Leave the exponent alone, and account for how many like terms there are:
 <div id="A.STSYS.SYSSUB.D" class="tabcontent">
 	<p>
 		
-		
+		As a strategy for solving systems of equations, <b>substitution</b> is a combination of isolating variables and using substitution for creating equivalent expressions. That's all!
 		
 	</p>
 </div>
@@ -2278,14 +2459,45 @@ Leave the exponent alone, and account for how many like terms there are:
 
 <tr>
 <td>1.</td>
+<td>Start with a system of equations.</td>
+<td>\(\left \{
+\begin{aligned}
+x+y & = 10 \\
+2x+y & = 12
+\end{aligned}
+\right .\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Pick one of the variables to eliminate, and create equivalent equations so that the variable is on the same side of each equation, but has opposite coefficients.</td>
+<td>\(\left \{
+\begin{aligned}
+-x-y & = -10 \\
+2x + y & = 12
+\end{aligned}
+\right .\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Add the lefthand sides of the equations, and also add the righthand sides. This is still valid because you added equivalent quantities to both sides.</td>
+<td>
+\((-x-y)+(2x+y) = -10 + 12\)
+</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Isolate the <i>other</i> variable (not the one you eliminated) in this new equation.</td>
+<td>\(-x+2x-y+y=-10+12 \rightarrow x = 2\)</td>
+<tr>
+
+<tr>
+<td>5.</td>
+<td>Solve for the variable you eliminated with one of the equations you started with.</td>
+<td>\(x+y = 10 \rightarrow 2+y=10 \rightarrow y=8\)</td>
+</tr>
 </tr>
 
 </table>
@@ -2296,7 +2508,103 @@ Leave the exponent alone, and account for how many like terms there are:
 <div id="A.STSYS.ELIM.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        x + y &= 10 \\
+        x - y &= 2
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Add the two equations to eliminate \( y \):
+        \[
+        (x + y) + (x - y) = 10 + 2 \quad \Rightarrow \quad 2x = 12
+        \]
+        <strong>Step 2:</strong> Solve for \( x \): 
+        \[
+        x = 6
+        \]
+        <strong>Step 3:</strong> Substitute \( x = 6 \) into the first equation: 
+        \[
+        6 + y = 10 \quad \Rightarrow \quad y = 4
+        \]
+        Solution: \( x = 6 \), \( y = 4 \).
+    </li>
+
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        3x + 2y &= 18 \\
+        2x - 2y &= 4
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Add the two equations to eliminate \( y \):
+        \[
+        (3x + 2y) + (2x - 2y) = 18 + 4 \quad \Rightarrow \quad 5x = 22
+        \]
+        <strong>Step 2:</strong> Solve for \( x \): 
+        \[
+        x = \frac{22}{5}
+        \]
+        <strong>Step 3:</strong> Substitute \( x = \frac{22}{5} \) into one of the original equations to solve for \( y \):
+        \[
+        3\left(\frac{22}{5}\right) + 2y = 18
+        \]
+        Simplify:
+        \[
+        \frac{66}{5} + 2y = 18 \quad \Rightarrow \quad 2y = 18 - \frac{66}{5} = \frac{24}{5}
+        \]
+        \[
+        y = \frac{12}{5}
+        \]
+        Solution: \( x = \frac{22}{5} \), \( y = \frac{12}{5} \).
+    </li>
+
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        2x + 3y &= 12 \\
+        4x + 6y &= 24
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Notice that the second equation is a multiple of the first. Subtract the first equation from the second:
+        \[
+        (4x + 6y) - (2x + 3y) = 24 - 12 \quad \Rightarrow \quad 0 = 0
+        \]
+        <strong>Result:</strong> This indicates the system has infinitely many solutions, as the two equations are dependent (i.e., they represent the same line).
+    </li>
+
+    <li>
+        Given the system: 
+        \[
+        \begin{align*}
+        5x - 2y &= 1 \\
+        3x + 2y &= 11
+        \end{align*}
+        \]
+        <strong>Step 1:</strong> Add the two equations to eliminate \( y \):
+        \[
+        (5x - 2y) + (3x + 2y) = 1 + 11 \quad \Rightarrow \quad 8x = 12
+        \]
+        <strong>Step 2:</strong> Solve for \( x \):
+        \[
+        x = \frac{12}{8} = \frac{3}{2}
+        \]
+        <strong>Step 3:</strong> Substitute \( x = \frac{3}{2} \) into one of the original equations to solve for \( y \):
+        \[
+        5\left(\frac{3}{2}\right) - 2y = 1 \quad \Rightarrow \quad \frac{15}{2} - 2y = 1
+        \]
+        Simplify and solve for \( y \):
+        \[
+        -2y = 1 - \frac{15}{2} = -\frac{13}{2} \quad \Rightarrow \quad y = \frac{13}{4}
+        \]
+        Solution: \( x = \frac{3}{2} \), \( y = \frac{13}{4} \).
+    </li>
+</ul>
+
 		
 	</p>
 </div>
@@ -2317,7 +2625,55 @@ Leave the exponent alone, and account for how many like terms there are:
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<table>
+    <tr>
+        <th>Common Mistake</th>
+        <th>Correction</th>
+    </tr>
+    <tr>
+        <td>
+            Failing to align terms properly: <br>
+            When adding or subtracting the equations, students might not align like terms (i.e., \( x \)-terms, \( y \)-terms, and constants) correctly. For example:
+            \[
+            \begin{align*}
+            2x + 3y &= 12 \\
+            4x + 2 &= 10
+            \end{align*}
+            \]
+            Incorrectly aligning the terms as:
+            \[
+            (2x + 3y) + (4x + 2) = 22
+            \]
+        </td>
+        <td>
+            Always ensure that like terms are aligned before adding or subtracting. In this case, modify the second equation so that all terms are comparable:
+            \[
+            \begin{align*}
+            2x + 3y &= 12 \\
+            4x + 0y &= 10
+            \end{align*}
+            \]
+            Now, align the \( x \)- and \( y \)-terms correctly before proceeding with elimination.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Forgetting to multiply both sides when necessary: <br>
+            To eliminate a variable, students might multiply one side of the equation by a factor but forget to apply the multiplication to the entire equation. For example:
+            \[
+            \begin{align*}
+            2x + 3y &= 6 \\
+            4x - y &= 5
+            \end{align*}
+            \]
+            Attempting to eliminate \( x \) by multiplying the first equation by 2 but forgetting to multiply the constant term:
+            \[
+            4x + 6y = 6
+            \]
+        </td>
+        <td>
+            Remember to multiply both sides of the equat
+
 		</table>
 	</p>
 </div>
