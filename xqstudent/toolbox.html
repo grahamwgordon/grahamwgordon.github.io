@@ -3346,7 +3346,12 @@ In symbols you can write this as
 <div id="STATS.CEN.MED.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+<li>\( \require{cancel} 3, 7, 9, 11, 15 \rightarrow \cancel{3}, \cancel{7}, 9, \cancel{11}, \cancel{15} \rightarrow 9\)</li>
+<li>\(4, 8, 10, 12 \rightarrow \cancel{4}, 8, 10, \cancel{12} \rightarrow \frac{8+10}{2} = 9 \)</li>
+<li>\(21, 5, 13, 17, 9 \rightarrow 5, 9, 13, 17, 21 \rightarrow \cancel{5}, \cancel{9}, 13, \cancel{17}, \cancel{21} \rightarrow 13 \)</li>
+</ul>
+
 		
 	</p>
 </div>
@@ -3359,7 +3364,18 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+        <td>
+            <strong>Forgetting to sort the data set first:</strong> <br>
+            If you calculate the median without sorting, you may get the wrong middle value.
+            For example, with the data set \( \{7, 3, 9\} \), selecting \( 3 \) as the median without sorting is incorrect.
+        </td>
+        <td>
+            <strong>Always sort the data set in ascending order before finding the median:</strong> <br>
+            For the data set \( \{7, 3, 9\} \), sort to get \( \{3, 7, 9\} \). Now the median is \( 7 \).
+        </td>
+    </tr>
+   
 		</table>
 	</p>
 </div>
@@ -3367,7 +3383,7 @@ In symbols you can write this as
 <div id="STATS.CEN.MED.V" class="tabcontent">
 	<p>
 		
-		
+		<img src="./media/img_STAT_CENT_MED.png">
 		
 	</p>
 </div>
@@ -3375,7 +3391,8 @@ In symbols you can write this as
 <div id="STATS.CEN.MED.D" class="tabcontent">
 	<p>
 		
-		
+		The <b>median</b> of a univariate data set is a measure of center which marks the halfway point of the data points: half of the data points are left of the median, and the other half are right of the median.
+Since calculating the median does not involve measuring how far away value are from the center of the data, the presence of outliers or asymmetry in the data don't typically influence the median.
 		
 	</p>
 </div>
@@ -3490,19 +3507,32 @@ In symbols you can write this as
 
 <tr>
 <td>1.</td>
+<td>Start with a univariate data set.</td>
+<td>\(-7,-4,-3,-2,0,0.5,1,2\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Choose a bin size.</td>
+<td>\(2\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Prepare an axis with step size equal to the bin size you chose.</td>
+<td><img src="./media/img_hist_axis.png"></td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Between consecutive tick marks, put a bar whose height is equal to the number of data points whose values are at least as big as the left tick mark and less than the right tick mark.</td>
+<td><img src="./media/img_hist_final.png"></td>
 </tr>
 
 </table>
 
-Add a link to the corresponding power tool here.
+You can also make these in Desmos and Google Sheets!
+For Desmos, these steps create a <b>left</b>-aligned histogram.
 		
 	</p>
 </div>
@@ -3579,6 +3609,8 @@ Add a link to the corresponding power tool here.
 </tr>
 
 </table>
+
+You can also make these in Desmos and Google Sheets!
 		
 	</p>
 </div>
@@ -3655,6 +3687,8 @@ Add a link to the corresponding power tool here.
 </tr>
 
 </table>
+
+You can also make these in Desmos and Google Sheets!
 		
 	</p>
 </div>
@@ -3731,6 +3765,8 @@ Add a link to the corresponding power tool here.
 </tr>
 
 </table>
+
+You can also make these in Desmos and Google Sheets!
 		
 	</p>
 </div>
@@ -3802,25 +3838,25 @@ Add a link to the corresponding power tool here.
 <tr>
 <td>1.</td>
 <td>Start with two data sets that have approximately the same mean.</td>
-<td></td>
+<td><img src="./media/stdev_comp_1.png"></td>
 </tr>
 
 <tr>
 <td>2.</td>
 <td>Ask yourself, "How far away from the mean are these data points?"</td>
-<td></td>
+<td><img src="./media/stdev_comp_2.png"></td>
 </tr>
 
 <tr>
 <td>3.</td>
 <td>For the group where the points are further from the mean, conclude that the <b>standard deviation</b> of that data is probably larger than the standard deviation of the other data.</td>
-<td></td>
+<td><img src="./media/stdev_comp_3.png"></td>
 </tr>
 
 <tr>
 <td>4.</td>
 <td>Use technology to calculate the standard deviation precisely, just to be sure.</td>
-<td></td>
+<td><img src="./media/stdev_comp_4.png"></td>
 </tr>
 
 </table>
@@ -3831,9 +3867,7 @@ Add a link to the corresponding power tool here.
 <div id="STATS.CG.STDEV.E" class="tabcontent">
 	<p>
 		
-		<ul>
-<li>The average of \(89,97,78,102\) is \(\frac{89+97+78+102}{4} = \frac{366}{4} = 91.5\)</li>
-</ul>
+		
 		
 	</p>
 </div>
@@ -3847,8 +3881,8 @@ Add a link to the corresponding power tool here.
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
 		<tr>
-<td>Average of \(1, 0, 3\) is \(\frac{1+3}{2} = 2\)</td>
-<td>Include the zeros in the count: \(\frac{1+0+3}{3} = \frac{4}{3} \approx 1.333\)</td>
+<td>Using standard deviation to compare data sets with quite different means.</td>
+<td>Only use this to compare data sets with similar means.</td>
 </tr>
 		</table>
 	</p>
@@ -3857,7 +3891,7 @@ Add a link to the corresponding power tool here.
 <div id="STATS.CG.STDEV.V" class="tabcontent">
 	<p>
 		
-		<img src="./media/mean_calc_anim.gif">
+		Check out the "How To" section!
 		
 	</p>
 </div>
@@ -3865,7 +3899,28 @@ Add a link to the corresponding power tool here.
 <div id="STATS.CG.STDEV.D" class="tabcontent">
 	<p>
 		
-		The <b>mean</b> (also known as the <b>average</b>) of a list of numbers is a measure of the center or position of the numbers. Somewhat informally, it represents a "typical" value from the list if you were to pick at random. More precisely, if every number in the list were replaced by the mean, the sum of the numbers would stay the same. For this reason, the mean is skewed toward outliers. For a measure of center that is not skewed by outliers, check out the <b>median</b>.
+		The <b>standard deviation</b> of a data set measures how much the data points vary from the mean.
+There are two slightly different ways of computing it.
+In each case, let \(x_1,x_2,\ldots,x_n\) be the collection of \(n\) data points you are pondering.
+
+<ul>
+<li>
+If you know the mean of the population you got your data from, then you can compute the <b>population standard deviation</b> as follows.
+Let \(\mu\) denote the mean of the population.
+Then the population standard deviation is given by the following formula.
+\[
+\sigma_{\text{population}} = \sqrt{\frac{(x_1-\mu)^2 + \cdots + (x_n - \mu)^2 }{n}}
+\]
+</li>
+<li>
+Even if you don't know the mean of the population, you can still compute the <b>sample standard deviation</b> as follows.
+Let \(\bar{x}\) denote the mean of the data set \(x_1, \ldots, x_n\).
+Then the sample standard deviation is given by the following formula.
+\[
+\sigma_{\text{sample}} = \sqrt{\frac{(x_1-\bar{x})^2 + \cdots + (x_n - \bar{x})^2 }{n-1}}
+\]
+</li>
+</ul>
 		
 	</p>
 </div>
