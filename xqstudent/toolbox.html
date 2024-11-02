@@ -3540,7 +3540,8 @@ For Desmos, these steps create a <b>left</b>-aligned histogram.
 <div id="STATS.DAT.HIST.E" class="tabcontent">
 	<p>
 		
-		
+		What better place for examples than <a href="https://www.desmos.com/calculator/01zjuan9ea">generating your own in Desmos</a>?
+Note that the "left" alignment option is already chosen to match with our "How To" section.
 		
 	</p>
 </div>
@@ -3553,7 +3554,56 @@ For Desmos, these steps create a <b>left</b>-aligned histogram.
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+        <td>
+            <strong>Incorrectly setting bin intervals:</strong> <br>
+            Using uneven bin widths or non-overlapping bins can distort the distribution of data.
+        </td>
+        <td>
+            <strong>Use consistent, non-overlapping bin intervals:</strong> <br>
+            Decide on appropriate bin sizes based on the data range (e.g., bins of width 5 if data spans 0 to 50). Make sure each value falls into only one bin.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Miscounting frequencies:</strong> <br>
+            Counting data points incorrectly for each bin can lead to an inaccurate histogram.
+        </td>
+        <td>
+            <strong>Double-check counts for each bin:</strong> <br>
+            Carefully count data points within each bin interval and tally the frequencies to ensure accuracy.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Inconsistent bar heights:</strong> <br>
+            Drawing bars with heights that don't accurately reflect frequencies can misrepresent data.
+        </td>
+        <td>
+            <strong>Ensure bar heights match frequencies:</strong> <br>
+            For each bin, measure bar height proportionally to the frequency of data points in that bin.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Omitting labels for axes and bins:</strong> <br>
+            Without clear labels, it can be hard to interpret the data in the histogram.
+        </td>
+        <td>
+            <strong>Label the axes and bins clearly:</strong> <br>
+            Label the x-axis with bin intervals and the y-axis with frequency counts. Add a title to indicate what data the histogram represents.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Gaps between bars:</strong> <br>
+            Leaving gaps between bars (unless it’s a bar chart) can imply non-continuous data, which is misleading for a histogram.
+        </td>
+        <td>
+            <strong>Keep bars touching each other:</strong> <br>
+            Ensure bars are adjacent to indicate a continuous data set unless there are explicit gaps in the data.
+        </td>
+    </tr>
 		</table>
 	</p>
 </div>
@@ -3561,7 +3611,7 @@ For Desmos, these steps create a <b>left</b>-aligned histogram.
 <div id="STATS.DAT.HIST.V" class="tabcontent">
 	<p>
 		
-		
+		See the "How To" section!
 		
 	</p>
 </div>
@@ -3569,89 +3619,12 @@ For Desmos, these steps create a <b>left</b>-aligned histogram.
 <div id="STATS.DAT.HIST.D" class="tabcontent">
 	<p>
 		
-		
+		A <b>histogram</b> is a 2-dimensional visualization of univariate data.
+It displays the frequency with which data values show up within evenly sized intervals.
 		
 	</p>
 </div>
 <!-- END The Mathematics: Histogram -->
-</div>
-<!-- END TOOL: toolname -->
-
-<!-- BEGIN TOOL: Boxplot -->
-<button type="button" class="tool">Boxplot</button>
-<div class="toolcontent">
-	<!-- BEGIN TABLINKS: Boxplot -->
-	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.H')">How To</button>
-		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.E')">Examples</button>
-		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.M')">Common Mistakes</button>
-		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.V')">Visualizations</button>
-		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.D')">The Mathematics</button>
-		
-	</div>
-	<!-- END TABLINKS: Boxplot -->
-<!-- BEGIN How to: Boxplot-->
-<div id="STATS.DAT.BOX.H" class="tabcontent">
-	<p>
-		
-		<table>
-
-<tr>
-<td>1.</td>
-</tr>
-
-<tr>
-<td>2.</td>
-</tr>
-
-<tr>
-<td>3.</td>
-</tr>
-
-</table>
-
-You can also make these in Desmos and Google Sheets!
-		
-	</p>
-</div>
-<!-- END How to: Boxplot --><!-- BEGIN Examples: Boxplot-->
-<div id="STATS.DAT.BOX.E" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END Examples: Boxplot --><!-- BEGIN Common Mistakes: Boxplot-->
-<div id="STATS.DAT.BOX.M" class="tabcontent">
-	<p>
-		
-<table>
-<tr>
-<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
-<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
-</tr>
-		
-		</table>
-	</p>
-</div>
-<!-- END Common Mistakes: Boxplot --><!-- BEGIN Visuals: Boxplot-->
-<div id="STATS.DAT.BOX.V" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END Visuals: Boxplot --><!-- BEGIN The Mathematics: Boxplot-->
-<div id="STATS.DAT.BOX.D" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END The Mathematics: Boxplot -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -3676,19 +3649,32 @@ You can also make these in Desmos and Google Sheets!
 
 <tr>
 <td>1.</td>
+<td>Start with a univariate data set.</td>
+<td>\(-7,-4,-3,-2,0,0.5,1,2\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Choose a bin size.</td>
+<td>\(2\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Prepare an axis with step size equal to the bin size you chose.</td>
+<td><img src="./media/img_hist_axis.png"></td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Between consecutive tick marks, put a stack of dots whose height is equal to the number of data points whose values are at least as big as the left tick mark and less than the right tick mark.</td>
+<td><img src="./media/img_dot_final.png"></td>
 </tr>
 
 </table>
 
 You can also make these in Desmos and Google Sheets!
+For Desmos, these steps create a <b>left</b>-aligned dot plot.
 		
 	</p>
 </div>
@@ -3696,7 +3682,8 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.DOT.E" class="tabcontent">
 	<p>
 		
-		
+		What better place for examples than <a href="https://www.desmos.com/calculator/ks4zt6qog7">generating your own in Desmos</a>?
+Note that the "left" alignment option is already chosen to match with our "How To" section.
 		
 	</p>
 </div>
@@ -3709,7 +3696,10 @@ You can also make these in Desmos and Google Sheets!
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+<td>Same as for histograms...</td>
+<td>...since they're so similar!</td>
+</tr>
 		</table>
 	</p>
 </div>
@@ -3717,7 +3707,7 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.DOT.V" class="tabcontent">
 	<p>
 		
-		
+		See the "How To" section!
 		
 	</p>
 </div>
@@ -3725,11 +3715,133 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.DOT.D" class="tabcontent">
 	<p>
 		
-		
+		A <b>dot plot</b> is a 2-dimensional visualization of univariate data.
+It displays the frequency with which data values show up within evenly sized intervals.
 		
 	</p>
 </div>
 <!-- END The Mathematics: Dotplot -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Boxplot -->
+<button type="button" class="tool">Boxplot</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Boxplot -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.DAT.BOX.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Boxplot -->
+<!-- BEGIN How to: Boxplot-->
+<div id="STATS.DAT.BOX.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a univariate data set.</td>
+<td>\(2,4,5,7,9,12,14,15,17,19,21\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Determine the minimum, first quartile, median, third quartile, and maximum of the data.</td>
+<td>These are \(1, \)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Prepare an axis that at least ranges from the minimum to the maximum of the data.</td>
+<td><img src="./media/boxplot_axes_only.png"></td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Just above the axis, draw vertical lines at each of the values you found in step 2.</td>
+<td><img src="./media/boxplot_vertical_lines.png"></td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Create the final "box and whisker" plot by adding horizontal lines as shown to make a box around the IQR and "whiskers" extending to the minimum and maximum.</td>
+<td><img src="./media/boxplot_final.png"></td>
+</tr>
+
+</table>
+
+You can also make these in Desmos and Google Sheets!
+		
+	</p>
+</div>
+<!-- END How to: Boxplot --><!-- BEGIN Examples: Boxplot-->
+<div id="STATS.DAT.BOX.E" class="tabcontent">
+	<p>
+		
+		What better place for examples than <a href="https://www.desmos.com/calculator/oslq6pkzfv">generating your own in Desmos</a>?
+
+
+		
+	</p>
+</div>
+<!-- END Examples: Boxplot --><!-- BEGIN Common Mistakes: Boxplot-->
+<div id="STATS.DAT.BOX.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td><strong>Mistaking the Median for the Mean</strong>: Using the mean instead of the median as the middle line in the box.</td>
+    <td><strong>Use the Median</strong>: The middle line of the box in a box plot should represent the median, not the mean.</td>
+  </tr>
+  <tr>
+    <td><strong>Incorrectly Identifying Quartiles</strong>: Misplacing Q1 or Q3, especially if the dataset isn’t sorted.</td>
+    <td><strong>Sort Data First</strong>: Always sort the data in ascending order before finding Q1 and Q3.</td>
+  </tr>
+  <tr>
+    <td><strong>Extending Whiskers Beyond the Data Range</strong>: Drawing whiskers to include all data points, even outliers.</td>
+    <td><strong>Follow the 1.5*IQR Rule</strong>: Whiskers should extend only up to 1.5 times the interquartile range (IQR) from Q1 and Q3. Points beyond this are outliers.</td>
+  </tr>
+  <tr>
+    <td><strong>Using Incorrect Values for Minimum and Maximum</strong>: Misidentifying the smallest or largest values, especially if outliers are involved.</td>
+    <td><strong>Distinguish Outliers from Min/Max</strong>: The minimum and maximum in a box plot refer to the values within the whiskers, excluding outliers.</td>
+  </tr>
+  <tr>
+    <td><strong>Unequal Box Heights in Vertical Box Plots</strong>: Making the box width vary based on data frequency.</td>
+    <td><strong>Keep Box Width Consistent</strong>: In a box plot, the box width or height should remain uniform and doesn’t indicate data frequency.</td>
+  </tr>
+  <tr>
+    <td><strong>Labeling the Boxplot Incorrectly</strong>: Not indicating which values are Q1, Median, Q3, etc.</td>
+    <td><strong>Label Key Points Clearly</strong>: Clearly label Q1, Median, Q3, and any outliers if the box plot is for instructional use.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Boxplot --><!-- BEGIN Visuals: Boxplot-->
+<div id="STATS.DAT.BOX.V" class="tabcontent">
+	<p>
+		
+		See the "How To" section!
+		
+	</p>
+</div>
+<!-- END Visuals: Boxplot --><!-- BEGIN The Mathematics: Boxplot-->
+<div id="STATS.DAT.BOX.D" class="tabcontent">
+	<p>
+		
+		A <b>box plot</b> is a helpful way to visualize the range, interquartile range, median, and outliers of a univariate data set.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Boxplot -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -3750,23 +3862,28 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.SCATTER.H" class="tabcontent">
 	<p>
 		
-		<table>
+		This table uses images from <a href="https://www.desmos.com/calculator/aqeu63ycop">this Desmos graph</a>.
 
+<table>
 <tr>
 <td>1.</td>
+<td>Start with a 2-column table of data.</td>
+<td><img src="./media/img_scatter_table.png"></td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Create axes on graph paper that can accomodate the entire range of values in the table.</td>
+<td><img src="./media/img_scatter_axes.png"></td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>For each row in the table, place a point on the graph with those \(x\)- and \(y\)-coordinates.</td>
+<td><img src="./media/img_scatter_final.png"></td>
 </tr>
 
 </table>
-
-You can also make these in Desmos and Google Sheets!
 		
 	</p>
 </div>
@@ -3803,7 +3920,7 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.SCATTER.D" class="tabcontent">
 	<p>
 		
-		
+		A <b>scatterplot</b> is a data display used to visual represent bivariate data.
 		
 	</p>
 </div>
