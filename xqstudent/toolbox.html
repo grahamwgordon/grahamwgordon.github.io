@@ -1758,9 +1758,9 @@ for all real numbers \(a\).
 <!-- END TOOL: toolname -->
 
 			</div>
-			<!-- END DRAWER: Create equivalent equations --><!-- DRAWER BUTTON: Strategies for solving 1-variable equations -->
-			<button type="button" class="drawer"> Strategies for solving 1-variable equations</button>
-			<!-- BEGIN DRAWER: Strategies for solving 1-variable equations -->
+			<!-- END DRAWER: Create equivalent equations --><!-- DRAWER BUTTON: Strategies for solving 1-variable linear equations -->
+			<button type="button" class="drawer"> Strategies for solving 1-variable linear equations</button>
+			<!-- BEGIN DRAWER: Strategies for solving 1-variable linear equations -->
 			<div class="drawercontent">
 <!-- BEGIN TOOL: Gather like terms -->
 <button type="button" class="tool">Gather like terms</button>
@@ -1967,10 +1967,111 @@ Leave the exponent alone, and account for how many like terms there are:
 </div>
 <!-- END TOOL: toolname -->
 
+<!-- BEGIN TOOL: Deal with denominators -->
+<button type="button" class="tool">Deal with denominators</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Deal with denominators -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STEQ.DENOMS.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STEQ.DENOMS.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STEQ.DENOMS.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STEQ.DENOMS.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STEQ.DENOMS.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Deal with denominators -->
+<!-- BEGIN How to: Deal with denominators-->
+<div id="A.STEQ.DENOMS.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with an equation.</td>
+<td>\(3(x-2) = 4x + 1\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Expand things out so that the variable isn't grouped with other things in parentheses or fractions.</td>
+<td>\(3x - 6 = 4x + 1\)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Use the addition and subtraction properties to move all the terms with the variable to one side of the equation, and everything else to the other side.</td>
+<td>\(3x - 4x = 1 + 6\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Gather like terms.</td>
+<td>\(-x = 7\)</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Use the multiplication or division properties to make the variable have a coefficient of \(1\).</td>
+<td>\(x = -7\)</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Deal with denominators --><!-- BEGIN Examples: Deal with denominators-->
+<div id="A.STEQ.DENOMS.E" class="tabcontent">
+	<p>
+		
+		<ul>
+  <li>Start with the equation: \( 3x + 5 = 17 \)</li>
+  <li>Subtract 5 from both sides: \( 3x + 5 - 5 = 17 - 5 \) which simplifies to \( 3x = 12 \)</li>
+  <li>Divide both sides by 3: \( \frac{3x}{3} = \frac{12}{3} \) which simplifies to \( x = 4 \)</li>
+  <li>Verify the solution by substituting \( x = 4 \) into the original equation: \( 3(4) + 5 = 17 \)</li>
+  <li>Since both sides are equal, \( x = 4 \) is the correct solution.</li>
+</ul>
+
+		
+	</p>
+</div>
+<!-- END Examples: Deal with denominators --><!-- BEGIN Common Mistakes: Deal with denominators-->
+<div id="A.STEQ.DENOMS.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Deal with denominators --><!-- BEGIN Visuals: Deal with denominators-->
+<div id="A.STEQ.DENOMS.V" class="tabcontent">
+	<p>
+		
+		
+		
+	</p>
+</div>
+<!-- END Visuals: Deal with denominators --><!-- BEGIN The Mathematics: Deal with denominators-->
+<div id="A.STEQ.DENOMS.D" class="tabcontent">
+	<p>
+		
+		The phrase <b>isolate the variable</b> is synonymous with the process of algebraically solving an equation to express one variable in terms of all the stuff in the equation that <i>doesn't</i> involve the variable you're solving for.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Deal with denominators -->
+</div>
+<!-- END TOOL: toolname -->
+
 			</div>
-			<!-- END DRAWER: Strategies for solving 1-variable equations --><!-- DRAWER BUTTON: Strategies for solving systems of equations -->
-			<button type="button" class="drawer"> Strategies for solving systems of equations</button>
-			<!-- BEGIN DRAWER: Strategies for solving systems of equations -->
+			<!-- END DRAWER: Strategies for solving 1-variable linear equations --><!-- DRAWER BUTTON: Strategies for solving systems of linear equations -->
+			<button type="button" class="drawer"> Strategies for solving systems of linear equations</button>
+			<!-- BEGIN DRAWER: Strategies for solving systems of linear equations -->
 			<div class="drawercontent">
 <!-- BEGIN TOOL: Substitution -->
 <button type="button" class="tool">Substitution</button>
@@ -2035,6 +2136,8 @@ x & = 2 + y
 </tr>
 
 </table>
+
+NATURE & NUMBER: if you end up with an impossibility, there are no solutions; if you end up with a tautology like 0=0, there are infinitely many solutions; if you end up with one solution, there is one solution. Wow, that's confusing because "solution" was used in two different ways there.
 		
 	</p>
 </div>
@@ -2213,7 +2316,7 @@ x & = 2 + y
 <div id="A.STSYS.SYSSUB.V" class="tabcontent">
 	<p>
 		
-		
+		N/A
 		
 	</p>
 </div>
@@ -2408,11 +2511,7 @@ x+y & = 10 \\
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		<table>
-    <tr>
-        <th>Common Mistake</th>
-        <th>Correction</th>
-    </tr>
+		
     <tr>
         <td>
             Failing to align terms properly: <br>
@@ -2464,6 +2563,68 @@ x+y & = 10 \\
 <div id="A.STSYS.ELIM.V" class="tabcontent">
 	<p>
 		
+		N/A
+		
+	</p>
+</div>
+<!-- END Visuals: Elimination --><!-- BEGIN The Mathematics: Elimination-->
+<div id="A.STSYS.ELIM.D" class="tabcontent">
+	<p>
+		
+		
+		
+	</p>
+</div>
+<!-- END The Mathematics: Elimination -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Elimination -->
+<button type="button" class="tool">Elimination</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Elimination -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Elimination -->
+<!-- BEGIN How to: Elimination-->
+<div id="A.STSYS.ELIM.H" class="tabcontent">
+	<p>
+		
+		
+		
+	</p>
+</div>
+<!-- END How to: Elimination --><!-- BEGIN Examples: Elimination-->
+<div id="A.STSYS.ELIM.E" class="tabcontent">
+	<p>
+		
+		
+		
+	</p>
+</div>
+<!-- END Examples: Elimination --><!-- BEGIN Common Mistakes: Elimination-->
+<div id="A.STSYS.ELIM.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Elimination --><!-- BEGIN Visuals: Elimination-->
+<div id="A.STSYS.ELIM.V" class="tabcontent">
+	<p>
+		
 		
 		
 	</p>
@@ -2481,7 +2642,7 @@ x+y & = 10 \\
 <!-- END TOOL: toolname -->
 
 			</div>
-			<!-- END DRAWER: Strategies for solving systems of equations --><!-- DRAWER BUTTON: Work with inequalities -->
+			<!-- END DRAWER: Strategies for solving systems of linear equations --><!-- DRAWER BUTTON: Work with inequalities -->
 			<button type="button" class="drawer"> Work with inequalities</button>
 			<!-- BEGIN DRAWER: Work with inequalities -->
 			<div class="drawercontent">
@@ -2955,21 +3116,21 @@ In symbols you can write this as
 			<button type="button" class="drawer"> Use different representations</button>
 			<!-- BEGIN DRAWER: Use different representations -->
 			<div class="drawercontent">
-<!-- BEGIN TOOL: Graph a relationship -->
-<button type="button" class="tool">Graph a relationship</button>
+<!-- BEGIN TOOL: Graph a linear relationship -->
+<button type="button" class="tool">Graph a linear relationship</button>
 <div class="toolcontent">
-	<!-- BEGIN TABLINKS: Graph a relationship -->
+	<!-- BEGIN TABLINKS: Graph a linear relationship -->
 	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'A.REP.G.H')">How To</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.G.E')">Examples</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.G.M')">Common Mistakes</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.G.V')">Visualizations</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.G.D')">The Mathematics</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GLIN.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GLIN.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GLIN.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GLIN.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GLIN.D')">The Mathematics</button>
 		
 	</div>
-	<!-- END TABLINKS: Graph a relationship -->
-<!-- BEGIN How to: Graph a relationship-->
-<div id="A.REP.G.H" class="tabcontent">
+	<!-- END TABLINKS: Graph a linear relationship -->
+<!-- BEGIN How to: Graph a linear relationship-->
+<div id="A.REP.GLIN.H" class="tabcontent">
 	<p>
 		
 		<table>
@@ -2990,16 +3151,16 @@ In symbols you can write this as
 		
 	</p>
 </div>
-<!-- END How to: Graph a relationship --><!-- BEGIN Examples: Graph a relationship-->
-<div id="A.REP.G.E" class="tabcontent">
+<!-- END How to: Graph a linear relationship --><!-- BEGIN Examples: Graph a linear relationship-->
+<div id="A.REP.GLIN.E" class="tabcontent">
 	<p>
 		
 		
 		
 	</p>
 </div>
-<!-- END Examples: Graph a relationship --><!-- BEGIN Common Mistakes: Graph a relationship-->
-<div id="A.REP.G.M" class="tabcontent">
+<!-- END Examples: Graph a linear relationship --><!-- BEGIN Common Mistakes: Graph a linear relationship-->
+<div id="A.REP.GLIN.M" class="tabcontent">
 	<p>
 		
 <table>
@@ -3011,23 +3172,23 @@ In symbols you can write this as
 		</table>
 	</p>
 </div>
-<!-- END Common Mistakes: Graph a relationship --><!-- BEGIN Visuals: Graph a relationship-->
-<div id="A.REP.G.V" class="tabcontent">
+<!-- END Common Mistakes: Graph a linear relationship --><!-- BEGIN Visuals: Graph a linear relationship-->
+<div id="A.REP.GLIN.V" class="tabcontent">
 	<p>
 		
 		
 		
 	</p>
 </div>
-<!-- END Visuals: Graph a relationship --><!-- BEGIN The Mathematics: Graph a relationship-->
-<div id="A.REP.G.D" class="tabcontent">
+<!-- END Visuals: Graph a linear relationship --><!-- BEGIN The Mathematics: Graph a linear relationship-->
+<div id="A.REP.GLIN.D" class="tabcontent">
 	<p>
 		
 		
 		
 	</p>
 </div>
-<!-- END The Mathematics: Graph a relationship -->
+<!-- END The Mathematics: Graph a linear relationship -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -3184,7 +3345,128 @@ In symbols you can write this as
 <!-- END TOOL: toolname -->
 
 			</div>
-			<!-- END DRAWER: Use different representations --><!-- id'd header for Statistics -->
+			<!-- END DRAWER: Use different representations --><!-- DRAWER BUTTON: Stray content (slope, y-intercept, constraints, domain, function formalities) -->
+			<button type="button" class="drawer"> Stray content (slope, y-intercept, constraints, domain, function formalities)</button>
+			<!-- BEGIN DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities) -->
+			<div class="drawercontent">
+<!-- BEGIN TOOL: Find the slope of a linear relationship -->
+<button type="button" class="tool">Find the slope of a linear relationship</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Find the slope of a linear relationship -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.SLOPE.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.SLOPE.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.SLOPE.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.SLOPE.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.SLOPE.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Find the slope of a linear relationship -->
+<!-- BEGIN How to: Find the slope of a linear relationship-->
+<div id="A.STRAY.SLOPE.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a linear relationship.</td>
+<td>This could be an equation, a table, or a graph. For this example, we'll use a table. See the "Examples" tab for other scenarios. <br> <img src="./media/table_for_slope.png"></td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Pick two different points from the table.</td>
+<td>\((0,2)\) and \((2,8)\)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Calculate the "rise," which is how much the \(y\) value increases from the first point to the next.</td>
+<td>\(8-2=6\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Calculate the "run," which is how much the \(x\) value increases from the first point to the next.</td>
+<td>\(2-0=2\)</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Calculate the slope as the rise divided by the run.</td>
+<td>\(\frac{6}{2} = 3\)</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Find the slope of a linear relationship --><!-- BEGIN Examples: Find the slope of a linear relationship-->
+<div id="A.STRAY.SLOPE.E" class="tabcontent">
+	<p>
+		
+		<ul>
+<li>Given the equation \(y = 4x - 5\), you can find two data points by choosing some values for \(x\) and plugging them in.
+Plugging in \(1\) and \(3\) for \(x\) confirms that \((1,-1)\) and \((3,7)\) are two points related by this equation.
+You can compute the slope as "rise over run" now.
+\[\frac{7 - (-1)}{3-1} = \frac{8}{2} = 4\]
+That's it!
+</li>
+
+
+<li>Given the graph of a linear equation, you can find two data points by choosing two points on the line.<br>
+<img src="./media/graph_for_slope.png">
+<br>
+You can then compute the slope as usual now.
+\[\frac{2-7}{5-1} = \frac{-5}{4} = -1.25\]
+</li>
+</ul>
+		
+	</p>
+</div>
+<!-- END Examples: Find the slope of a linear relationship --><!-- BEGIN Common Mistakes: Find the slope of a linear relationship-->
+<div id="A.STRAY.SLOPE.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+<td>Vertical lines have zero slope.</td>
+<td>The "run" in a vertical line is always zero between two points.
+Dividing by zero is undefined, so vertical lines actually have undefined slope.
+</tr>
+
+
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Find the slope of a linear relationship --><!-- BEGIN Visuals: Find the slope of a linear relationship-->
+<div id="A.STRAY.SLOPE.V" class="tabcontent">
+	<p>
+		
+		<img src="./media/img_A_STRAY_SLOPE.png">
+		
+	</p>
+</div>
+<!-- END Visuals: Find the slope of a linear relationship --><!-- BEGIN The Mathematics: Find the slope of a linear relationship-->
+<div id="A.STRAY.SLOPE.D" class="tabcontent">
+	<p>
+		
+		Given a pair of points \((x_1,y_1)\) and \((x_2,y_2)\) in the coordinate plane, the slope of the line between them is defined as
+\[ \frac{y_2-y_1}{x_2-x_1}. \]
+		
+	</p>
+</div>
+<!-- END The Mathematics: Find the slope of a linear relationship -->
+</div>
+<!-- END TOOL: toolname -->
+
+			</div>
+			<!-- END DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities) --><!-- id'd header for Statistics -->
 			<h1 id="Statistics">Statistics</h1><!-- DRAWER BUTTON: Measure the center of data -->
 			<button type="button" class="drawer"> Measure the center of data</button>
 			<!-- BEGIN DRAWER: Measure the center of data -->
