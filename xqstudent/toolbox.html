@@ -3405,6 +3405,127 @@ Since calculating the median does not involve measuring how far away value are f
 			<button type="button" class="drawer"> Measure the spread of data</button>
 			<!-- BEGIN DRAWER: Measure the spread of data -->
 			<div class="drawercontent">
+<!-- BEGIN TOOL: Find the "5-number summary" -->
+<button type="button" class="tool">Find the "5-number summary"</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Find the "5-number summary" -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.5NUM.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.5NUM.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.5NUM.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.5NUM.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.5NUM.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Find the "5-number summary" -->
+<!-- BEGIN How to: Find the "5-number summary"-->
+<div id="STATS.SPREAD.5NUM.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a univariate data set.</td>
+<td>\(2,4,5,7,9,12,14,15,17,19,21\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Sort it if necessary!</td>
+<td>This one's already sorted.</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Find the median. If the median is in the data set, cross it out.</td>
+<td>\(\require{cancel} 2,4,5,7,9,\cancel{12},14,15,17,19,21\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Find the first quartile (Q1) by finding the median of the left half of the data.
+Find the third quartile (Q3) by finding the median of the right half of the data.</td>
+<td>\(\require{cancel} 2,4,\underline{5},7,9,\cancel{12},14,15,\underline{17},19,21\)</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Find the minimum and maximum ofi the data set.</td>
+<td>\(2 \longleftrightarrow 21\)</td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td>The 5-number summary is those five numbers in order from smallest to largest.</td>
+<td>\(2, 5, 12, 17, 21\)</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Find the "5-number summary" --><!-- BEGIN Examples: Find the "5-number summary"-->
+<div id="STATS.SPREAD.5NUM.E" class="tabcontent">
+	<p>
+		
+		You can generate your own examples with <a href="https://www.desmos.com/calculator/z9hejbxvmz">this Desmos link</a>.
+Simply change the data points that are in the list \(L\), and Desmos will show you the minimum, first quartile, median, third quartile, and maximum.
+		
+	</p>
+</div>
+<!-- END Examples: Find the "5-number summary" --><!-- BEGIN Common Mistakes: Find the "5-number summary"-->
+<div id="STATS.SPREAD.5NUM.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		  <tr>
+    <td><strong>Not Sorting the Data First</strong>: Attempting to find quartiles without ordering the data, which leads to incorrect results.</td>
+    <td><strong>Sort Data in Ascending Order</strong>: Always arrange data in ascending order before calculating the minimum, quartiles, and maximum.</td>
+  </tr>
+  <tr>
+    <td><strong>Incorrectly Identifying the Median</strong>: Miscounting or not considering whether the data set has an odd or even number of values.</td>
+    <td><strong>Check for Even or Odd Count</strong>: If odd, the median is the middle value; if even, the median is the average of the two middle values.</td>
+  </tr>
+  <tr>
+    <td><strong>Misinterpreting Quartile Boundaries</strong>: Dividing the data unevenly or not following standard methods to find Q1 and Q3.</td>
+    <td><strong>Use Proper Quartile Method</strong>: Divide the data into lower and upper halves from the median, and take the median of each half for Q1 and Q3.</td>
+  </tr>
+  <tr>
+    <td><strong>Confusing Minimum and Maximum Values</strong>: Mistaking Q1 and Q3 for the actual minimum and maximum values.</td>
+    <td><strong>Double-Check Extremes</strong>: Ensure that the minimum and maximum are the lowest and highest values in the data set, not Q1 or Q3.</td>
+  </tr>
+  <tr>
+    <td><strong>Leaving Out Data Points</strong>: Accidentally omitting values from the data set when calculating summary statistics.</td>
+    <td><strong>Recheck Data Set Completeness</strong>: Review the original data to ensure all values are included in calculations.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Find the "5-number summary" --><!-- BEGIN Visuals: Find the "5-number summary"-->
+<div id="STATS.SPREAD.5NUM.V" class="tabcontent">
+	<p>
+		
+		Check out the Boxplot tool in the "Make a data display" drawer. It's essentially a visualiztion of the 5-number summary!
+		
+	</p>
+</div>
+<!-- END Visuals: Find the "5-number summary" --><!-- BEGIN The Mathematics: Find the "5-number summary"-->
+<div id="STATS.SPREAD.5NUM.D" class="tabcontent">
+	<p>
+		
+		The <b>five number summary</b> essentially breaks up a univariate data set into four intervals, where each intervals contains approximately one fourth of the total data points.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Find the "5-number summary" -->
+</div>
+<!-- END TOOL: toolname -->
+
 <!-- BEGIN TOOL: Compute the IQR -->
 <button type="button" class="tool">Compute the IQR</button>
 <div class="toolcontent">
@@ -3426,14 +3547,20 @@ Since calculating the median does not involve measuring how far away value are f
 
 <tr>
 <td>1.</td>
+<td>Start with a data set.</td>
+<td>\(2,7,45,3,4,5,8,3,2,1,7,8\)</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Compute the first and third quartiles as in the 5-number summary.</td>
+<td>Q1 is \(2.5\), and Q3 is \(7.5\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Compute the interquartile range as \(\text{IQR} = \text{Q}3 - \text{Q}1\).</td>
+<td>\(\text{IQR} = 7.5-2.5 = 5\)</td>
 </tr>
 
 </table>
@@ -3444,7 +3571,14 @@ Since calculating the median does not involve measuring how far away value are f
 <div id="STATS.SPREAD.IQR.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+  <li>Data Set: [1, 3, 3, 6, 7, 8, 9] <br> IQR: \( Q3 - Q1 = 8 - 3 = 5 \)</li>
+  <li>Data Set: [12, 15, 15, 18, 20, 21, 24, 26] <br> IQR: \( Q3 - Q1 = 24 - 15 = 9 \)</li>
+  <li>Data Set: [5, 7, 8, 10, 12, 13, 15, 18, 20] <br> IQR: \( Q3 - Q1 = 18 - 8 = 10 \)</li>
+  <li>Data Set: [2, 5, 7, 7, 10, 12, 14, 15] <br> IQR: \( Q3 - Q1 = 14 - 5 = 9 \)</li>
+  <li>Data Set: [30, 35, 40, 45, 50, 55, 60] <br> IQR: \( Q3 - Q1 = 55 - 35 = 20 \)</li>
+</ul>
+
 		
 	</p>
 </div>
@@ -3457,7 +3591,26 @@ Since calculating the median does not involve measuring how far away value are f
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+    <td><strong>Not Sorting the Data First</strong>: Trying to calculate Q1 and Q3 without ordering the data, leading to incorrect quartiles.</td>
+    <td><strong>Sort Data in Ascending Order</strong>: Always arrange data in ascending order before finding Q1 and Q3 to calculate the IQR accurately.</td>
+  </tr>
+  <tr>
+    <td><strong>Misidentifying Quartile Positions</strong>: Incorrectly dividing the data set or using incorrect methods to find Q1 and Q3.</td>
+    <td><strong>Follow Standard Quartile Calculation</strong>: Divide the data into lower and upper halves at the median, and find the median of each half for Q1 and Q3.</td>
+  </tr>
+  <tr>
+    <td><strong>Using Midpoints Instead of Quartiles</strong>: Using values other than Q1 and Q3 as the boundaries for IQR.</td>
+    <td><strong>Use Only Q1 and Q3</strong>: IQR is calculated as \( Q3 - Q1 \); double-check that you're using these specific quartile values.</td>
+  </tr>
+  <tr>
+    <td><strong>Forgetting to Subtract</strong>: Calculating the IQR as an average or sum of Q1 and Q3 instead of the difference.</td>
+    <td><strong>Use Subtraction</strong>: The IQR is specifically the difference \( Q3 - Q1 \), not any other combination.</td>
+  </tr>
+  <tr>
+    <td><strong>Misinterpreting Q1 or Q3 Boundaries</strong>: Confusing Q1 and Q3 with minimum and maximum values.</td>
+    <td><strong>Verify Quartile Values</strong>: Confirm that Q1 and Q3 are calculated based on the middle 50% of data, not the extremes.</td>
+  </tr>
 		</table>
 	</p>
 </div>
@@ -3465,7 +3618,7 @@ Since calculating the median does not involve measuring how far away value are f
 <div id="STATS.SPREAD.IQR.V" class="tabcontent">
 	<p>
 		
-		
+		Check out the visualizations for boxplots. The IQR is just the width of the box!
 		
 	</p>
 </div>
@@ -3473,11 +3626,143 @@ Since calculating the median does not involve measuring how far away value are f
 <div id="STATS.SPREAD.IQR.D" class="tabcontent">
 	<p>
 		
-		
+		The <b>interquartile range</b>, like the standard deviation, is a measure of spread.
+However, unlike the standard deviation, the interquartile range is better suited for asymmetric of heavily skewed data.
 		
 	</p>
 </div>
 <!-- END The Mathematics: Compute the IQR -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Identify outliers -->
+<button type="button" class="tool">Identify outliers</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Identify outliers -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.OUT.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.OUT.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.OUT.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.OUT.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'STATS.SPREAD.OUT.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Identify outliers -->
+<!-- BEGIN How to: Identify outliers-->
+<div id="STATS.SPREAD.OUT.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a data set.</td>
+<td>\(2,7,45,3,4,5,8,3,2,1,7,8\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Find the quartiles and the IQR.</td>
+<td>\(\text{IQR} = \text{Q}3 - \text{Q}1 = 7.5 - 2.5 = 5\)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Compute \(\text{Q}1 - 1.5 \cdot \text{IQR}\) and \(\text{Q}3 + 1.5 \cdot \text{IQR}\).</td>
+<td>\(-5\) and \(15\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Data points outside of that range of values are considered outliers.</td>
+<td>\(45\) is the only outlier.</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Identify outliers --><!-- BEGIN Examples: Identify outliers-->
+<div id="STATS.SPREAD.OUT.E" class="tabcontent">
+	<p>
+		
+		<ul>
+  <li>Data Set: [1, 3, 3, 6, 7, 8, 9, 20] <br>
+    <strong>Steps:</strong> Q1 = 3, Q3 = 8, IQR = 8 - 3 = 5. <br>
+    <strong>Lower Bound:</strong> 3 - (1.5 * 5) = -4.5 <br>
+    <strong>Upper Bound:</strong> 8 + (1.5 * 5) = 15.5 <br>
+    <strong>Outliers:</strong> 20
+  </li>
+  
+  <li>Data Set: [2, 5, 7, 7, 10, 12, 14, 15, 40, 100] <br>
+    <strong>Steps:</strong> Q1 = 7, Q3 = 15, IQR = 15 - 7 = 8. <br>
+    <strong>Lower Bound:</strong> 7 - (1.5 * 8) = -5 <br>
+    <strong>Upper Bound:</strong> 15 + (1.5 * 8) = 27 <br>
+    <strong>Outliers:</strong> 40, 100
+  </li>
+  
+  <li>Data Set: [-15, -10, 2, 5, 6, 8, 12, 14, 15, 30] <br>
+    <strong>Steps:</strong> Q1 = 5, Q3 = 14, IQR = 14 - 5 = 9. <br>
+    <strong>Lower Bound:</strong> 5 - (1.5 * 9) = -8.5 <br>
+    <strong>Upper Bound:</strong> 14 + (1.5 * 9) = 27.5 <br>
+    <strong>Outliers:</strong> -15, -10, 30
+  </li>
+</ul>
+
+		
+	</p>
+</div>
+<!-- END Examples: Identify outliers --><!-- BEGIN Common Mistakes: Identify outliers-->
+<div id="STATS.SPREAD.OUT.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td><strong>Using the mean instead of the median</strong>: Calculating outliers based on the mean, which can be skewed by extreme values.</td>
+    <td><strong>Use the median for IQR calculations</strong>: Use Q1 and Q3 (not the mean) to find the IQR, which is more robust against extreme values.</td>
+  </tr>
+  <tr>
+    <td><strong>Skipping data sorting</strong>: Forgetting to sort data, leading to incorrect quartile calculations.</td>
+    <td><strong>Sort data in ascending order</strong>: Ensure the data is ordered before finding Q1 and Q3 to accurately identify outliers.</td>
+  </tr>
+  <tr>
+    <td><strong>Incorrectly calculating quartiles</strong>: Using inconsistent methods to find Q1 and Q3, which affects the IQR.</td>
+    <td><strong>Use consistent quartile calculations</strong>: Find the median of each half of the data for Q1 and Q3, following a consistent method.</td>
+  </tr>
+  <tr>
+    <td><strong>Misinterpreting the 1.5 * IQR rule</strong>: Applying the rule incorrectly, such as adding 1.5 to Q1 or Q3 instead of multiplying by the IQR.</td>
+    <td><strong>Follow the rule accurately</strong>: Calculate the lower bound as \( Q1 - (1.5 \times IQR) \) and the upper bound as \( Q3 + (1.5 \times IQR) \).</td>
+  </tr>
+  <tr>
+    <td><strong>Only using one boundary</strong>: Checking only above the upper bound or below the lower bound, missing some outliers.</td>
+    <td><strong>Check both upper and lower bounds</strong>: Calculate both limits to catch outliers on either end of the data set.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Identify outliers --><!-- BEGIN Visuals: Identify outliers-->
+<div id="STATS.SPREAD.OUT.V" class="tabcontent">
+	<p>
+		
+		Check out the boxplot tool in the "Make data displays" drawer! The "How To" section shows a picture of a boxplot with outliers marked.
+		
+	</p>
+</div>
+<!-- END Visuals: Identify outliers --><!-- BEGIN The Mathematics: Identify outliers-->
+<div id="STATS.SPREAD.OUT.D" class="tabcontent">
+	<p>
+		
+		<b>Outliers</b> are data points that appear to fall well beyond the typical range of data points in a data set.
+There is no universal precise way to identify outliers, but one that is commonly used is the \(1.5 \cdot \text{IQR}\) rule.
+It suggests considering \(x\) and outlier if either \(x < \text{Q}1 - 1.5 \cdot \text{IQR}\) or \(x > \text{Q}3 + 1.5 \cdot \text{IQR}\).
+		
+	</p>
+</div>
+<!-- END The Mathematics: Identify outliers -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -3557,7 +3842,7 @@ Note that the "left" alignment option is already chosen to match with our "How T
 		<tr>
         <td>
             <strong>Incorrectly setting bin intervals:</strong> <br>
-            Using uneven bin widths or non-overlapping bins can distort the distribution of data.
+            Using uneven bin widths or overlapping bins can distort the distribution of data.
         </td>
         <td>
             <strong>Use consistent, non-overlapping bin intervals:</strong> <br>
@@ -3566,32 +3851,12 @@ Note that the "left" alignment option is already chosen to match with our "How T
     </tr>
     <tr>
         <td>
-            <strong>Miscounting frequencies:</strong> <br>
-            Counting data points incorrectly for each bin can lead to an inaccurate histogram.
-        </td>
-        <td>
-            <strong>Double-check counts for each bin:</strong> <br>
-            Carefully count data points within each bin interval and tally the frequencies to ensure accuracy.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <strong>Inconsistent bar heights:</strong> <br>
-            Drawing bars with heights that don't accurately reflect frequencies can misrepresent data.
-        </td>
-        <td>
-            <strong>Ensure bar heights match frequencies:</strong> <br>
-            For each bin, measure bar height proportionally to the frequency of data points in that bin.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <strong>Omitting labels for axes and bins:</strong> <br>
+            <strong>Omitting labels for bins:</strong> <br>
             Without clear labels, it can be hard to interpret the data in the histogram.
         </td>
         <td>
-            <strong>Label the axes and bins clearly:</strong> <br>
-            Label the x-axis with bin intervals and the y-axis with frequency counts. Add a title to indicate what data the histogram represents.
+            <strong>Label the bins clearly:</strong> <br>
+            Label the x-axis with bin intervals so that a viewer knows how the data is grouped.
         </td>
     </tr>
     <tr>
@@ -3697,9 +3962,25 @@ Note that the "left" alignment option is already chosen to match with our "How T
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
 		<tr>
-<td>Same as for histograms...</td>
-<td>...since they're so similar!</td>
-</tr>
+        <td>
+            <strong>Incorrectly setting bin intervals:</strong> <br>
+            Using uneven bin widths or overlapping bins can distort the distribution of data.
+        </td>
+        <td>
+            <strong>Use consistent, non-overlapping bin intervals:</strong> <br>
+            Decide on appropriate bin sizes based on the data range (e.g., bins of width 5 if data spans 0 to 50). Make sure each value falls into only one bin.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Omitting labels for bins:</strong> <br>
+            Without clear labels, it can be hard to interpret the data in the histogram.
+        </td>
+        <td>
+            <strong>Label the bins clearly:</strong> <br>
+            Label the x-axis with bin intervals so that a viewer knows how the data is grouped.
+        </td>
+    </tr>
 		</table>
 	</p>
 </div>
@@ -3741,7 +4022,9 @@ It displays the frequency with which data values show up within evenly sized int
 <div id="STATS.DAT.BOX.H" class="tabcontent">
 	<p>
 		
-		<table>
+		This table uses images from <a href="https://www.desmos.com/calculator/btlyws05sz">this Desmos graph</a>.
+
+<table>
 
 <tr>
 <td>1.</td>
@@ -3752,7 +4035,7 @@ It displays the frequency with which data values show up within evenly sized int
 <tr>
 <td>2.</td>
 <td>Determine the minimum, first quartile, median, third quartile, and maximum of the data.</td>
-<td>These are \(1, \)</td>
+<td>These are \(2, 5, 12, 17, 21\).</td>
 </tr>
 
 <tr>
@@ -3771,6 +4054,18 @@ It displays the frequency with which data values show up within evenly sized int
 <td>5.</td>
 <td>Create the final "box and whisker" plot by adding horizontal lines as shown to make a box around the IQR and "whiskers" extending to the minimum and maximum.</td>
 <td><img src="./media/boxplot_final.png"></td>
+</tr>
+
+<tr>
+<td>6.</td>
+<td>Optional: Exclude outliers from your data by following the \(1.5 \ast \text{IQR}\) rule (see the corresponding tool for outliers in the "Measure the spread of data" drawer). Repeat the process above without the outliers, and just mark outliers with dots in line with the whiskers.
+<td>
+This example uses different data.
+<br>
+<a href="https://www.desmos.com/calculator/9xlhi2fmka">Desmos link</a>
+<br>
+<img src="./media/boxplot_with_outliers.png">
+</td>
 </tr>
 
 </table>
@@ -3802,25 +4097,10 @@ You can also make these in Desmos and Google Sheets!
     <td><strong>Mistaking the Median for the Mean</strong>: Using the mean instead of the median as the middle line in the box.</td>
     <td><strong>Use the Median</strong>: The middle line of the box in a box plot should represent the median, not the mean.</td>
   </tr>
+  
   <tr>
-    <td><strong>Incorrectly Identifying Quartiles</strong>: Misplacing Q1 or Q3, especially if the dataset isn’t sorted.</td>
-    <td><strong>Sort Data First</strong>: Always sort the data in ascending order before finding Q1 and Q3.</td>
-  </tr>
-  <tr>
-    <td><strong>Extending Whiskers Beyond the Data Range</strong>: Drawing whiskers to include all data points, even outliers.</td>
-    <td><strong>Follow the 1.5*IQR Rule</strong>: Whiskers should extend only up to 1.5 times the interquartile range (IQR) from Q1 and Q3. Points beyond this are outliers.</td>
-  </tr>
-  <tr>
-    <td><strong>Using Incorrect Values for Minimum and Maximum</strong>: Misidentifying the smallest or largest values, especially if outliers are involved.</td>
-    <td><strong>Distinguish Outliers from Min/Max</strong>: The minimum and maximum in a box plot refer to the values within the whiskers, excluding outliers.</td>
-  </tr>
-  <tr>
-    <td><strong>Unequal Box Heights in Vertical Box Plots</strong>: Making the box width vary based on data frequency.</td>
-    <td><strong>Keep Box Width Consistent</strong>: In a box plot, the box width or height should remain uniform and doesn’t indicate data frequency.</td>
-  </tr>
-  <tr>
-    <td><strong>Labeling the Boxplot Incorrectly</strong>: Not indicating which values are Q1, Median, Q3, etc.</td>
-    <td><strong>Label Key Points Clearly</strong>: Clearly label Q1, Median, Q3, and any outliers if the box plot is for instructional use.</td>
+    <td><strong>Unequal Box Heights</strong>: Making the box height vary based on data frequency.</td>
+    <td><strong>Keep Box Height Consistent</strong>: In a box plot, the box height should remain uniform and doesn’t indicate data frequency.</td>
   </tr>
 		</table>
 	</p>
@@ -3891,7 +4171,7 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.SCATTER.E" class="tabcontent">
 	<p>
 		
-		
+		What better place for examples than <a href="https://www.desmos.com/calculator/yonwihvckj">generating your own in Desmos</a>?
 		
 	</p>
 </div>
@@ -3904,7 +4184,26 @@ You can also make these in Desmos and Google Sheets!
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+    <td><strong>Not Labeling Axes</strong>: Leaving the x-axis and y-axis without labels, making it unclear what each axis represents.</td>
+    <td><strong>Add Clear Labels</strong>: Label each axis with the correct variable or units so the scatterplot data is interpretable.</td>
+  </tr>
+  <tr>
+    <td><strong>Using Uneven Intervals</strong>: Marking intervals inconsistently along the x-axis or y-axis.</td>
+    <td><strong>Use Consistent Intervals</strong>: Ensure all intervals are evenly spaced along both axes for accuracy in data representation.</td>
+  </tr>
+  <tr>
+    <td><strong>Misplacing Data Points</strong>: Plotting points slightly off from where they should be, leading to inaccuracy.</td>
+    <td><strong>Double-Check Coordinates</strong>: Carefully match each data point’s x and y values with the corresponding axis intervals before plotting.</td>
+  </tr>
+  <tr>
+    <td><strong>Overlapping or Clumping Points</strong>: Placing too many points in a small area without differentiation.</td>
+    <td><strong>Use Different Symbols or Colors</strong>: Differentiate overlapping points by using various symbols or colors if multiple data sets are plotted.</td>
+  </tr>
+  <tr>
+    <td><strong>Not Including a Title</strong>: Leaving the scatterplot without a title, which makes it harder to interpret the overall purpose of the data.</td>
+    <td><strong>Add a Descriptive Title</strong>: Give your scatterplot a concise title that explains what the data represents.</td>
+  </tr>
 		</table>
 	</p>
 </div>
@@ -3912,7 +4211,7 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.DAT.SCATTER.V" class="tabcontent">
 	<p>
 		
-		
+		See the "How To" section!
 		
 	</p>
 </div>
@@ -3954,7 +4253,7 @@ You can also make these in Desmos and Google Sheets!
 
 <tr>
 <td>1.</td>
-<td>Start with two data sets that have approximately the same mean.</td>
+<td>Start with data displays (such as histograms) for two data sets that have approximately the same mean.</td>
 <td><img src="./media/stdev_comp_1.png"></td>
 </tr>
 
@@ -3984,7 +4283,15 @@ You can also make these in Desmos and Google Sheets!
 <div id="STATS.CG.STDEV.E" class="tabcontent">
 	<p>
 		
-		
+		This section uses data from <a href="https://www.desmos.com/calculator/4cc2ua6lmo">this Desmos graph</a>.
+Each graph has mean equal to zero.
+
+<br>
+<img src="./media/stdev_ex1.png">
+<br>
+<img src="./media/stdev_ex2.png">
+<br>
+<img src="./media/stdev_ex3.png">
 		
 	</p>
 </div>
