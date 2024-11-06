@@ -2069,9 +2069,9 @@ Leave the exponent alone, and account for how many like terms there are:
 <!-- END TOOL: toolname -->
 
 			</div>
-			<!-- END DRAWER: Strategies for solving 1-variable linear equations --><!-- DRAWER BUTTON: Strategies for solving systems of linear equations -->
-			<button type="button" class="drawer"> Strategies for solving systems of linear equations</button>
-			<!-- BEGIN DRAWER: Strategies for solving systems of linear equations -->
+			<!-- END DRAWER: Strategies for solving 1-variable linear equations --><!-- DRAWER BUTTON: Strategies for solving 2-variable systems of linear equations -->
+			<button type="button" class="drawer"> Strategies for solving 2-variable systems of linear equations</button>
+			<!-- BEGIN DRAWER: Strategies for solving 2-variable systems of linear equations -->
 			<div class="drawercontent">
 <!-- BEGIN TOOL: Substitution -->
 <button type="button" class="tool">Substitution</button>
@@ -2126,18 +2126,26 @@ x & = 2 + y
 <td>4.</td>
 <td>Isolate the variable in this new equation.</td>
 <td>\(2 + 2y = 10 \rightarrow 2y=8 \rightarrow y=4\)</td>
-<tr>
+</tr>
 
 <tr>
 <td>5.</td>
-<td>Use the previous isolated variable to solve for it, too, and that's it.</td>
+<td>Use the previous isolated variable to solve for it, too.</td>
 <td>\(x = 2+y = 6\)</td>
 </tr>
+
+<tr>
+<td>6.</td>
+<td>Analyze the results.
+<ul>
+<li>If you end up with an impossible equation, then there are no solutions to the system.</li>
+<li>If you end up with a statement that is always true, like \(2=2\), then there are infinitely many solutions to the system.</li>
+<li>In neither situation, there is a unique solution to the system, and you'll have already found it!</li>
+</ul>
 </tr>
 
 </table>
 
-NATURE & NUMBER: if you end up with an impossibility, there are no solutions; if you end up with a tautology like 0=0, there are infinitely many solutions; if you end up with one solution, there is one solution. Wow, that's confusing because "solution" was used in two different ways there.
 		
 	</p>
 </div>
@@ -2394,6 +2402,16 @@ x+y & = 10 \\
 </tr>
 </tr>
 
+<tr>
+<td>6.</td>
+<td>Analyze the results.
+<ul>
+<li>If you end up with an impossible equation, then there are no solutions to the system.</li>
+<li>If you end up with a statement that is always true, like \(2=2\), then there are infinitely many solutions to the system.</li>
+<li>In neither situation, there is a unique solution to the system, and you'll have already found it!</li>
+</ul>
+</tr>
+
 </table>
 		
 	</p>
@@ -2579,37 +2597,91 @@ x+y & = 10 \\
 </div>
 <!-- END TOOL: toolname -->
 
-<!-- BEGIN TOOL: Elimination -->
-<button type="button" class="tool">Elimination</button>
+<!-- BEGIN TOOL: Use a graph -->
+<button type="button" class="tool">Use a graph</button>
 <div class="toolcontent">
-	<!-- BEGIN TABLINKS: Elimination -->
+	<!-- BEGIN TABLINKS: Use a graph -->
 	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.H')">How To</button>
-		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.E')">Examples</button>
-		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.M')">Common Mistakes</button>
-		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.V')">Visualizations</button>
-		<button class="tablinks" onclick="openTab(event,'A.STSYS.ELIM.D')">The Mathematics</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.SYSGRAPH.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.SYSGRAPH.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.SYSGRAPH.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.SYSGRAPH.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STSYS.SYSGRAPH.D')">The Mathematics</button>
 		
 	</div>
-	<!-- END TABLINKS: Elimination -->
-<!-- BEGIN How to: Elimination-->
-<div id="A.STSYS.ELIM.H" class="tabcontent">
+	<!-- END TABLINKS: Use a graph -->
+<!-- BEGIN How to: Use a graph-->
+<div id="A.STSYS.SYSGRAPH.H" class="tabcontent">
 	<p>
 		
-		
+		Graphs generated using <a href="https://www.desmos.com/calculator/xtigo0jqfu">this Desmos graph</a>.
+<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a system of equations.</td>
+<td>\(\left \{
+\begin{aligned}
+x+y & = 10 \\
+x-y & = 2
+\end{aligned}
+\right .\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Graph both equations on the same coordinate plane.</td>
+<td>
+<img src="./media/graph1_for_systems.png">
+</td>
+
+<tr>
+<td>3.</td>
+<td>Locate the point of intersection of the two graphs.</td>
+<td>
+<img src="./media/graph2_for_systems.png">
+</td>
+
+<tr>
+<td>4.</td>
+<td>Analyze the results.
+<ul>
+<li>If the graphs intersect in one point, then the coordinates of that point are the unique solution to the system.</li>
+<li>If the graphs are parallel, then there are no solutions.</li>
+<li>If the graphs overlap, then there are infinitely many solutions, given by all the points on the graphs.</li>
+</ul>
+</tr>
+
+</table>
 		
 	</p>
 </div>
-<!-- END How to: Elimination --><!-- BEGIN Examples: Elimination-->
-<div id="A.STSYS.ELIM.E" class="tabcontent">
+<!-- END How to: Use a graph --><!-- BEGIN Examples: Use a graph-->
+<div id="A.STSYS.SYSGRAPH.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+<li>
+<img src="./media/graph_ex1_for_systems.png">
+<br>
+(<a href="https://www.desmos.com/calculator/kuin2rywwu">link</a>)
+</li>
+<li>
+<img src="./media/graph_ex2_for_systems.png">
+<br>
+(<a href="https://www.desmos.com/calculator/qniu3cs5dp">link</a>)
+</li>
+<li>
+<img src="./media/graph_ex3_for_systems.png">
+<br>
+(<a href="https://www.desmos.com/calculator/ftdnsj4pme">link</a>)
+</li>
+</ul>
 		
 	</p>
 </div>
-<!-- END Examples: Elimination --><!-- BEGIN Common Mistakes: Elimination-->
-<div id="A.STSYS.ELIM.M" class="tabcontent">
+<!-- END Examples: Use a graph --><!-- BEGIN Common Mistakes: Use a graph-->
+<div id="A.STSYS.SYSGRAPH.M" class="tabcontent">
 	<p>
 		
 <table>
@@ -2617,32 +2689,38 @@ x+y & = 10 \\
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+<td>Expecting exact or whole-number solutions</td>
+<td>Graphs are helpful visualizations but also can be imprecise.
+When in doubt, plus values back into the original system to see if the solution works.
+If not, try an algebraic method, such as elimination or substitution.</td>
+</tr>
 		</table>
 	</p>
 </div>
-<!-- END Common Mistakes: Elimination --><!-- BEGIN Visuals: Elimination-->
-<div id="A.STSYS.ELIM.V" class="tabcontent">
+<!-- END Common Mistakes: Use a graph --><!-- BEGIN Visuals: Use a graph-->
+<div id="A.STSYS.SYSGRAPH.V" class="tabcontent">
 	<p>
 		
-		
+		See the "How To" and "Examples" sections!
 		
 	</p>
 </div>
-<!-- END Visuals: Elimination --><!-- BEGIN The Mathematics: Elimination-->
-<div id="A.STSYS.ELIM.D" class="tabcontent">
+<!-- END Visuals: Use a graph --><!-- BEGIN The Mathematics: Use a graph-->
+<div id="A.STSYS.SYSGRAPH.D" class="tabcontent">
 	<p>
 		
-		
+		Solving a system of equations by using a graph is no more than converting the algebraic information into geometric information and then interpreting it visually.
+The graphs intersect at coordinates where both equations are true, hence you get a solution to the system by finding an intersection point!
 		
 	</p>
 </div>
-<!-- END The Mathematics: Elimination -->
+<!-- END The Mathematics: Use a graph -->
 </div>
 <!-- END TOOL: toolname -->
 
 			</div>
-			<!-- END DRAWER: Strategies for solving systems of linear equations --><!-- DRAWER BUTTON: Work with inequalities -->
+			<!-- END DRAWER: Strategies for solving 2-variable systems of linear equations --><!-- DRAWER BUTTON: Work with inequalities -->
 			<button type="button" class="drawer"> Work with inequalities</button>
 			<!-- BEGIN DRAWER: Work with inequalities -->
 			<div class="drawercontent">
@@ -3968,6 +4046,414 @@ Dividing by zero is undefined, so vertical lines actually have undefined slope.
 	</p>
 </div>
 <!-- END The Mathematics: Graph a 2-variable linear inequality -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Define a function -->
+<button type="button" class="tool">Define a function</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Define a function -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.FUNCFORM.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.FUNCFORM.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.FUNCFORM.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.FUNCFORM.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.FUNCFORM.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Define a function -->
+<!-- BEGIN How to: Define a function-->
+<div id="A.STRAY.FUNCFORM.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Identify a quantity that <i>depends</i> on another quantity.</td>
+<td>The Fahrenheit temperaure is equal to \(32\) degrees plus \(1.8\) times the Celsius temperature.</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>The quantity that depends on another quantity is called the <b>dependent variable</b>, whereas the other quantity is called the <b>independent variable</b>. Assign then variable name.</td>
+<td>
+Independent variable: \(f = \) temperature measured in degrees Celsius
+<br>
+Dependent variable: \(c = \) temperature measured in degrees Fahrenheit
+</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Write the dependent variable, followed by a pair of parentheses containing the independent variable, followed by an equals sign, followed by a formula expressing the dependent variable in terms of the independent variable.</td>
+<td>\(f(c) = 32  + 1.8c\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Use conventional phrasing to express these symbols verbally.</td>
+<td>\(f(c) = 32 + 1.8c \rightarrow\) "\(f\) of \(c\) equals 32 plus one point eight \(c\)."
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Define a function --><!-- BEGIN Examples: Define a function-->
+<div id="A.STRAY.FUNCFORM.E" class="tabcontent">
+	<p>
+		
+		<ul>
+  <li>
+    <strong>Example 1:</strong> <br>
+    Situation: A car’s distance traveled over time at a constant speed.<br>
+    - Independent variable: Time (in hours), denoted by <em>t</em>.<br>
+    - Dependent variable: Distance traveled (in miles), denoted by <em>d</em>.<br>
+    - Function notation: <code>d(t)</code>, where <code>d(t) = speed × t</code>.
+  </li>
+  
+  <li>
+    <strong>Example 2:</strong> <br>
+    Situation: The height of a plant over several weeks.<br>
+    - Independent variable: Weeks (since the start of measurement), denoted by <em>w</em>.<br>
+    - Dependent variable: Height of the plant (in centimeters), denoted by <em>H</em>.<br>
+    - Function notation: <code>H(w)</code>, where <code>H(w)</code> represents the plant’s height at week <em>w</em>.
+  </li>
+  
+  <li>
+    <strong>Example 3:</strong> <br>
+    Situation: A company’s revenue based on the number of products sold.<br>
+    - Independent variable: Number of products sold, denoted by <em>x</em>.<br>
+    - Dependent variable: Revenue (in dollars), denoted by <em>R</em>.<br>
+    - Function notation: <code>R(x)</code>, where <code>R(x) = price × x</code>.
+  </li>
+</ul>
+
+		
+	</p>
+</div>
+<!-- END Examples: Define a function --><!-- BEGIN Common Mistakes: Define a function-->
+<div id="A.STRAY.FUNCFORM.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		 <tr>
+    <td>Using the variable symbol <code>f</code> instead of <code>f(x)</code> in expressions or equations.</td>
+    <td>Always write <code>f(x)</code> to indicate the function value at <code>x</code>. For example, instead of writing <code>f = 3x + 2</code>, write <code>f(x) = 3x + 2</code>.</td>
+  </tr>
+  <tr>
+    <td>Misunderstanding <code>f(a)</code> as a product of <code>f</code> and <code>a</code> rather than the function’s value at <code>x = a</code>.</td>
+    <td>Remember that <code>f(a)</code> means the output of the function when the input is <code>a</code>, not multiplication. For example, <code>f(3)</code> means “the value of <code>f</code> when <code>x = 3</code>.”</td>
+  </tr>
+  <tr>
+    <td>Incorrectly substituting values in the function notation, such as <code>f(x = 3)</code> instead of <code>f(3)</code>.</td>
+    <td>Write <code>f(3)</code> (not <code>f(x = 3)</code>) to evaluate the function at <code>x = 3</code>. <code>f(x = 3)</code> is not a correct notation for evaluating functions.</td>
+  </tr>
+  <tr>
+    <td>Using incorrect notation for dependent variables in word problems (e.g., saying <code>y = d(t)</code> instead of just <code>d(t)</code>).</td>
+    <td>Define the function notation correctly based on the variables given, such as writing <code>d(t)</code> to mean "distance as a function of time" instead of introducing extra symbols.</td>
+  </tr>
+  <tr>
+    <td>Forgetting to apply the function rule correctly when substituting a value for <code>x</code> (e.g., <code>f(2) = 2 + 3</code> instead of applying the function rule).</td>
+    <td>Ensure to follow the function rule for <code>f(x)</code>. For instance, if <code>f(x) = 2x + 1</code>, then <code>f(2) = 2(2) + 1 = 5</code>.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Define a function --><!-- BEGIN Visuals: Define a function-->
+<div id="A.STRAY.FUNCFORM.V" class="tabcontent">
+	<p>
+		
+		<img src="./media/img_function_concept.png">
+		
+	</p>
+</div>
+<!-- END Visuals: Define a function --><!-- BEGIN The Mathematics: Define a function-->
+<div id="A.STRAY.FUNCFORM.D" class="tabcontent">
+	<p>
+		
+		A <b>function</b> is a mathematical object that assigns exactly one output for every input. The collection of all possible inputs is called the <b>domain</b> of the function, and the set of all possible outputs is called the <b>range</b> of the function.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Define a function -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Define constraints -->
+<button type="button" class="tool">Define constraints</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Define constraints -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CONSTRAINT.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CONSTRAINT.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CONSTRAINT.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CONSTRAINT.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CONSTRAINT.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Define constraints -->
+<!-- BEGIN How to: Define constraints-->
+<div id="A.STRAY.CONSTRAINT.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a scenario.</td>
+<td>Chips cost $2.50 per pack, and apples cost $1 each. You want to spend a total of $10 on a combination of these two items.</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Identify both <i>variables</i> (whose values are unknown) and <i>parameters</i> (whose values are known and you can change to fit different scenarios).</td>
+<td>
+Variables: \(c\) = the number of packs of chips you buy, \(a\) = the number of apples you buy
+<br>
+Parameters: \(2.50\) = unit cost of chip bags in dollars, \(1\) = unit cost of apples, \(10\) = total expense
+</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Write an equation relating the variables and parameters.
+Depending on the situation, you might choose to write an inequality instead if you want some quantity to be at most as large as some other quantity.</td>
+<td>\(2.5c + a = 10\) or \(2.5c + a \leq 10\) if you want to spend at most $10.</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Define constraints --><!-- BEGIN Examples: Define constraints-->
+<div id="A.STRAY.CONSTRAINT.E" class="tabcontent">
+	<p>
+		
+		<ul>
+  <li>
+    <strong>Example 1:</strong> <br>
+    Scenario: A school is buying chairs and desks. The budget is $2000, and chairs cost $50 each while desks cost $100 each.<br>
+    - Define variables: Let <code>c</code> represent the number of chairs and <code>d</code> the number of desks.<br>
+    - Constraint (inequality): <code>50c + 100d ≤ 2000</code>, since the total cost cannot exceed the budget.
+  </li>
+  
+  <li>
+    <strong>Example 2:</strong> <br>
+    Scenario: A car rental company charges $40 per day plus $0.15 per mile driven. You want to spend no more than $300 for the rental.<br>
+    - Define variables: Let <code>d</code> represent the number of days and <code>m</code> the number of miles driven.<br>
+    - Constraint (inequality): <code>40d + 0.15m ≤ 300</code>, since the total cost should stay within the budget.
+  </li>
+  
+  <li>
+    <strong>Example 3:</strong> <br>
+    Scenario: A farm grows two types of crops, corn and wheat. Each acre of corn requires 2 hours of labor, and each acre of wheat requires 1 hour of labor. The farm has 100 hours of labor available.<br>
+    - Define variables: Let <code>x</code> represent the acres of corn and <code>y</code> the acres of wheat.<br>
+    - Constraint (inequality): <code>2x + y ≤ 100</code>, as the total labor hours should not exceed the available hours.
+  </li>
+</ul>
+
+		
+	</p>
+</div>
+<!-- END Examples: Define constraints --><!-- BEGIN Common Mistakes: Define constraints-->
+<div id="A.STRAY.CONSTRAINT.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td>Confusing parameters with variables (e.g., treating fixed numbers as variables).</td>
+    <td>Identify fixed values (parameters) separately from variables. For example, in a cost constraint, keep prices fixed and use variables only for quantities being controlled, such as the number of items bought.</td>
+  </tr>
+  <tr>
+    <td>Using addition when multiplication is required (e.g., adding costs per item instead of multiplying by quantity).</td>
+    <td>Review the scenario carefully and check if the scenario describes a “per-unit” rate, which usually requires multiplication. For example, <code>5x</code> for 5 dollars per unit and <code>x</code> units.</td>
+  </tr>
+  <tr>
+    <td>Writing the inequality in the wrong direction (e.g., <code>50c + 100d ≥ 2000</code> instead of <code>≤</code> for a budget constraint).</td>
+    <td>Interpret the scenario correctly: if there is a maximum limit (like a budget), use <code>≤</code>. For minimum limits, use <code>≥</code>. Double-check the context before choosing the inequality sign.</td>
+  </tr>
+  <tr>
+    <td>Failing to include all relevant terms in the equation or inequality (e.g., omitting part of a cost or constraint).</td>
+    <td>Ensure all parts of the scenario are accounted for in the constraint. Go through each element described and make sure it is represented in your equation or inequality.</td>
+  </tr>
+  <tr>
+    <td>Incorrectly setting constraints as equations instead of inequalities when there is a limit or flexibility.</td>
+    <td>If a scenario mentions a maximum, minimum, or range, use an inequality (<code>≤</code> or <code>≥</code>) rather than an equation. Equations are typically used for exact requirements.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Define constraints --><!-- BEGIN Visuals: Define constraints-->
+<div id="A.STRAY.CONSTRAINT.V" class="tabcontent">
+	<p>
+		
+		N/A
+		
+	</p>
+</div>
+<!-- END Visuals: Define constraints --><!-- BEGIN The Mathematics: Define constraints-->
+<div id="A.STRAY.CONSTRAINT.D" class="tabcontent">
+	<p>
+		
+		The word <b>constraint</b> is being used colloquially here.
+In the mathematical field of "optimization," the word constraint has a more precise definition.
+Here, it just refers to equations or inequalities that restrict or limit some of the possible values for the variables involved.
+Creating constraints is often an important part of mathematical modeling.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Define constraints -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Find \(x\)- and \(y\)-intercepts -->
+<button type="button" class="tool">Find \(x\)- and \(y\)-intercepts</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Find \(x\)- and \(y\)-intercepts -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CEPTS.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CEPTS.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CEPTS.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CEPTS.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.CEPTS.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Find \(x\)- and \(y\)-intercepts -->
+<!-- BEGIN How to: Find \(x\)- and \(y\)-intercepts-->
+<div id="A.STRAY.CEPTS.H" class="tabcontent">
+	<p>
+		
+		
+
+<table>
+
+<tr>
+<td>1.</td>
+<td>Start with an equation and/or its graph.</td>
+<td>For this example, we'll use the equation \(y = 4 - 2x\).
+See the "Visualizations" section for a graph.
+</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Find the \(x\)-intercept by plugging in \(0\) for \(y\) and solving for \(x\).</td>
+<td>
+\(0 = 4-2x \rightarrow 2x = 4 \rightarrow x = 2\)
+</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Find the \(y\)-intercept by plugging in \(0\) for \(x\) and solving for \(y\).</td>
+<td>
+\(y = 4-2(0) \rightarrow y = 4\)
+</td>
+</tr>
+
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Find \(x\)- and \(y\)-intercepts --><!-- BEGIN Examples: Find \(x\)- and \(y\)-intercepts-->
+<div id="A.STRAY.CEPTS.E" class="tabcontent">
+	<p>
+		
+		<ul>
+  <li>
+    <strong>Example 1:</strong> <br>
+    Equation: <code>2x + 3y = 12</code><br>
+    - To find the y-intercept: Set <code>x = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>2(0) + 3y = 12 → y = 4</code>. So, the y-intercept is <code>(0, 4)</code>.<br>
+    - To find the x-intercept: Set <code>y = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>2x + 3(0) = 12 → x = 6</code>. So, the x-intercept is <code>(6, 0)</code>.
+  </li>
+  
+  <li>
+    <strong>Example 2:</strong> <br>
+    Equation: <code>4x - y = 8</code><br>
+    - To find the y-intercept: Set <code>x = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>4(0) - y = 8 → y = -8</code>. So, the y-intercept is <code>(0, -8)</code>.<br>
+    - To find the x-intercept: Set <code>y = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>4x - 0 = 8 → x = 2</code>. So, the x-intercept is <code>(2, 0)</code>.
+  </li>
+  
+  <li>
+    <strong>Example 3:</strong> <br>
+    Equation: <code>-5x + 2y = 10</code><br>
+    - To find the y-intercept: Set <code>x = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>-5(0) + 2y = 10 → y = 5</code>. So, the y-intercept is <code>(0, 5)</code>.<br>
+    - To find the x-intercept: Set <code>y = 0</code> in the equation.<br>
+    &nbsp;&nbsp; <code>-5x + 2(0) = 10 → x = -2</code>. So, the x-intercept is <code>(-2, 0)</code>.
+  </li>
+</ul>
+
+		
+	</p>
+</div>
+<!-- END Examples: Find \(x\)- and \(y\)-intercepts --><!-- BEGIN Common Mistakes: Find \(x\)- and \(y\)-intercepts-->
+<div id="A.STRAY.CEPTS.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td>Setting both x and y to zero at the same time, resulting in an incorrect intercept.</td>
+    <td>Remember, to find the y-intercept, set <strong>x = 0</strong>. To find the x-intercept, set <strong>y = 0</strong>. Only one variable should be zero at a time.</td>
+  </tr>
+  <tr>
+    <td>Forgetting to solve for the variable after substitution (e.g., leaving the equation as <code>3y = 12</code> instead of solving for <code>y</code>).</td>
+    <td>Always solve for the remaining variable after substituting 0. For example, if <code>3y = 12</code>, solve it by dividing both sides by 3 to get <code>y = 4</code>.</td>
+  </tr>
+  <tr>
+    <td>Mixing up x- and y-intercepts, leading to coordinates like <code>(4, 0)</code> for the y-intercept.</td>
+    <td>Check that the x-intercept is in the form <code>(x, 0)</code> and the y-intercept is in the form <code>(0, y)</code>. The intercept type should match the variable that is zero.</td>
+  </tr>
+  <tr>
+    <td>Skipping the step of rewriting the equation after substituting, which can lead to calculation errors.</td>
+    <td>Rewrite the equation each time after substituting <code>x = 0</code> or <code>y = 0</code>, which helps avoid errors and clarifies the next steps.</td>
+  </tr>
+  <tr>
+    <td>Confusing the intercepts as points on the line but not understanding their special role (e.g., plotting as just any other points).</td>
+    <td>Recognize that x- and y-intercepts are where the line crosses the axes, and they are unique points. Use these points to help plot the line accurately.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Find \(x\)- and \(y\)-intercepts --><!-- BEGIN Visuals: Find \(x\)- and \(y\)-intercepts-->
+<div id="A.STRAY.CEPTS.V" class="tabcontent">
+	<p>
+		
+		<img src="./media/img_intercepts.png">
+(from <a href="https://www.desmos.com/calculator/eppb2zfrkr">this Desmos graph</a>)
+		
+	</p>
+</div>
+<!-- END Visuals: Find \(x\)- and \(y\)-intercepts --><!-- BEGIN The Mathematics: Find \(x\)- and \(y\)-intercepts-->
+<div id="A.STRAY.CEPTS.D" class="tabcontent">
+	<p>
+		
+		In general, <b>intercpets</b> are values along axes where the graph of an equation crosses that axis.
+In the coordinate plane, an \(x\)-intercept is an \(x\)-value where the \(y\)-value of the graph is zero, so that the graph crosses the \(x\)-axis.
+Likewise, a \(y\)-intercept is a \(y\)-value where the \(x\)-value of the graph is zero, so that the graph crosses the \(y\)-axis.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Find \(x\)- and \(y\)-intercepts -->
 </div>
 <!-- END TOOL: toolname -->
 
