@@ -3116,6 +3116,128 @@ In symbols you can write this as
 			<button type="button" class="drawer"> Use different representations</button>
 			<!-- BEGIN DRAWER: Use different representations -->
 			<div class="drawercontent">
+<!-- BEGIN TOOL: Read a graph -->
+<button type="button" class="tool">Read a graph</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Read a graph -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.REP.GREAD.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GREAD.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GREAD.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GREAD.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.GREAD.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Read a graph -->
+<!-- BEGIN How to: Read a graph-->
+<div id="A.REP.GREAD.H" class="tabcontent">
+	<p>
+		
+		Images generated with <a href="https://www.desmos.com/calculator/e4qwdd6lnc">this Desmos graph</a>.
+
+<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a graph. Make sure the axes are clearly labeled with descriptions and units. If the axes aren't labeled, ask whoever made the graph what the axes represent.</td>
+<td><img src = "./media/graph_for_read_no_point.png"></td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Pick a point on the actual thing that is graphed.</td>
+<td><img src = "./media/graph_for_read_pt_no_coords.png"></td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Find the \(x\)- and \(y\)-coordinates of the point by checking how far along the \(x\)- and \(y\)-axes the point is.</td>
+<td><img src="./media/graph_for_read_pt_w_coords.png"></td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>This point represents a pair of quantities that <i>are</i> related by the scenario the graph represents.</td>
+<td>Sixteen minutes after starting to preheat, the oven was at 230 degrees Fahrenheit.</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Points that aren't on the graphed object are <i>not</i> related by the scenario.</td>
+<td>Seventeen minutes after starting to preheat, the oven was not at 140 degrees Fahrenheit.
+<br><img src="./media/graph_for_read_pt_wrong_coords.png">
+</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Read a graph --><!-- BEGIN Examples: Read a graph-->
+<div id="A.REP.GREAD.E" class="tabcontent">
+	<p>
+		
+		<img src="./media/quadratic_graph_height.png" alt="Quadratic Graph of Height of a Thrown Object">
+
+		
+	</p>
+</div>
+<!-- END Examples: Read a graph --><!-- BEGIN Common Mistakes: Read a graph-->
+<div id="A.REP.GREAD.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td>Misinterpreting axis labels (e.g., treating "years" as "months").</td>
+    <td>Carefully read both axis labels to understand the units and scale before analyzing the data.</td>
+  </tr>
+  <tr>
+    <td>Overlooking data points that fall on the axes (assuming they are zero).</td>
+    <td>Check all points, especially those on axes, to confirm their values rather than assuming a value.</td>
+  </tr>
+  <tr>
+    <td>Ignoring the scale intervals and reading values incorrectly.</td>
+    <td>Count intervals along each axis to determine the scale and apply this to read values accurately.</td>
+  </tr>
+  <tr>
+    <td>Confusing different data series in a multi-line or multi-bar graph.</td>
+    <td>Refer to the legend and use colors or markers to identify the correct data series for each line or bar.</td>
+  </tr>
+  <tr>
+    <td>Assuming a trend or pattern without analyzing data distribution.</td>
+    <td>Look for data clusters, outliers, and consider the entire range of data before concluding trends or patterns.</td>
+  </tr>
+  <tr>
+    <td>Assuming every data point has the same weight or significance.</td>
+    <td>Consider the context of each point. Some graphs may have significant points (e.g., peaks or troughs) that require more attention.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Read a graph --><!-- BEGIN Visuals: Read a graph-->
+<div id="A.REP.GREAD.V" class="tabcontent">
+	<p>
+		
+		Check out the "How To" and "Examples" sections!
+		
+	</p>
+</div>
+<!-- END Visuals: Read a graph --><!-- BEGIN The Mathematics: Read a graph-->
+<div id="A.REP.GREAD.D" class="tabcontent">
+	<p>
+		
+		Graphs on the coordinate plane display precisely when a certain relationship between the \(x\)- and \(y\)-coordinates is satisfied.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Read a graph -->
+</div>
+<!-- END TOOL: toolname -->
+
 <!-- BEGIN TOOL: Graph a linear relationship -->
 <button type="button" class="tool">Graph a linear relationship</button>
 <div class="toolcontent">
@@ -3137,14 +3259,20 @@ In symbols you can write this as
 
 <tr>
 <td>1.</td>
+<td>Start with a table of data representing a linear relationship. If you don't have one yet, check out "Make a table!"</td>
+<td><img src = "./media/table_for_slope.png"></td>
 </tr>
 
 <tr>
-<td>2.</td>
+<td>4.</td>
+<td>Plot at least two different points from the table on the coordinate plane.</td>
+<td><img src = "./media/graph_linear_points.png"></td>
 </tr>
 
 <tr>
-<td>3.</td>
+<td>4.</td>
+<td>Connect the dots! That's it.</td>
+<td><img src="./media/graph_linear_line.png"></td>
 </tr>
 
 </table>
@@ -3155,7 +3283,13 @@ In symbols you can write this as
 <div id="A.REP.GLIN.E" class="tabcontent">
 	<p>
 		
-		
+		Examples from <a href="https://www.desmos.com/calculator/hh0k4dis9i">this Desmos graph</a>.
+
+<ul>
+<li><img src="./media/img_graph_line_ex1.png"></li>
+<li><img src="./media/img_graph_line_ex2.png"></li>
+<li><img src="./media/img_graph_line_ex3.png"></li>
+</ul>
 		
 	</p>
 </div>
@@ -3168,7 +3302,26 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+    <td><strong>Plotting points incorrectly</strong>: Transposing x- and y-values or placing points at wrong coordinates.</td>
+    <td><strong>Check coordinates carefully</strong>: Double-check each (x, y) pair before plotting on the graph to ensure correct placement.</td>
+  </tr>
+  <tr>
+    <td><strong>Not labeling the axes</strong>: Forgetting to label or incorrectly labeling x- and y-axes.</td>
+    <td><strong>Label both axes</strong>: Clearly label the x- and y-axes with appropriate variables or units as given in the table.</td>
+  </tr>
+  <tr>
+    <td><strong>Using an inconsistent scale</strong>: Choosing different scales for x- and y-axes without clear indication, causing a distorted graph.</td>
+    <td><strong>Maintain a consistent scale</strong>: Ensure the scale is consistent along each axis, and indicate scale differences if necessary.</td>
+  </tr>
+  <tr>
+    <td><strong>Forgetting to draw the line</strong>: Plotting points but neglecting to connect them with a line.</td>
+    <td><strong>Draw a straight line</strong>: After plotting points, draw a line through them to represent the linear relationship.</td>
+  </tr>
+  <tr>
+    <td><strong>Ignoring the pattern</strong>: Not verifying if the points align in a linear (straight-line) pattern.</td>
+    <td><strong>Check for linearity</strong>: Ensure that plotted points follow a straight line; if they don't, re-check the table for errors or re-plot as needed.</td>
+  </tr>
 		</table>
 	</p>
 </div>
@@ -3176,7 +3329,7 @@ In symbols you can write this as
 <div id="A.REP.GLIN.V" class="tabcontent">
 	<p>
 		
-		
+		Check out the "Examples" section!
 		
 	</p>
 </div>
@@ -3184,11 +3337,189 @@ In symbols you can write this as
 <div id="A.REP.GLIN.D" class="tabcontent">
 	<p>
 		
-		
+		<b>Linear relationships</b> are exactly those bivariate relationships whose graphs are straight lines.
 		
 	</p>
 </div>
 <!-- END The Mathematics: Graph a linear relationship -->
+</div>
+<!-- END TOOL: toolname -->
+
+<!-- BEGIN TOOL: Write an equation for a linear relationship -->
+<button type="button" class="tool">Write an equation for a linear relationship</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Write an equation for a linear relationship -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.REP.EQULINE.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.EQULINE.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.EQULINE.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.EQULINE.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.REP.EQULINE.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Write an equation for a linear relationship -->
+<!-- BEGIN How to: Write an equation for a linear relationship-->
+<div id="A.REP.EQULINE.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a table representing a linear relationship. If you don't have one, check out the "Make a table" tool!</td>
+<td><img src="./media/table_for_slope.png"></td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Find the slope.</td>
+<td>\(\frac{5-2}{1-0} = \frac{3}{1} = 3\)</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>A linear equation with defined slope can always be expressed as \(y=mx+b\), where \(m\) is the slope.</td>
+<td>\(y = 3x + b\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Plug in a point of your choosing, and solve for \(b\).</td>
+<td>\(5 = 3(1) + b \rightarrow 5 = 3+b \rightarrow b = 5-3 = 2\)</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>The value \(b\) is the \(y\)-intercept, and how you have the <b>slope-intercept</b> form of the equation!</td>
+<td>\(y = 3x + 2\)</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Write an equation for a linear relationship --><!-- BEGIN Examples: Write an equation for a linear relationship-->
+<div id="A.REP.EQULINE.E" class="tabcontent">
+	<p>
+		
+		<table>
+  <tr>
+    <th>Table of Points</th>
+    <th>Linear Equation</th>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr><th>x</th><th>y</th></tr>
+        <tr><td>1</td><td>3</td></tr>
+        <tr><td>2</td><td>5</td></tr>
+        <tr><td>3</td><td>7</td></tr>
+      </table>
+    </td>
+    <td>y = 2x + 1</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr><th>x</th><th>y</th></tr>
+        <tr><td>0</td><td>4</td></tr>
+        <tr><td>2</td><td>8</td></tr>
+        <tr><td>4</td><td>12</td></tr>
+      </table>
+    </td>
+    <td>y = 2x + 4</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr><th>x</th><th>y</th></tr>
+        <tr><td>-1</td><td>-2</td></tr>
+        <tr><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>4</td></tr>
+      </table>
+    </td>
+    <td>y = 3x + 1</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr><th>x</th><th>y</th></tr>
+        <tr><td>2</td><td>6</td></tr>
+        <tr><td>4</td><td>10</td></tr>
+        <tr><td>6</td><td>14</td></tr>
+      </table>
+    </td>
+    <td>y = 2x + 2</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr><th>x</th><th>y</th></tr>
+        <tr><td>-2</td><td>-8</td></tr>
+        <tr><td>0</td><td>-4</td></tr>
+        <tr><td>2</td><td>0</td></tr>
+      </table>
+    </td>
+    <td>y = 2x - 4</td>
+  </tr>
+</table>
+
+		
+	</p>
+</div>
+<!-- END Examples: Write an equation for a linear relationship --><!-- BEGIN Common Mistakes: Write an equation for a linear relationship-->
+<div id="A.REP.EQULINE.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td><strong>Misinterpreting the slope</strong>: Calculating the slope incorrectly by reversing the change in x and change in y (e.g., dividing rise by run incorrectly).</td>
+    <td><strong>Use the correct slope formula</strong>: Ensure the slope is calculated as \( \frac{y_2 - y_1}{x_2 - x_1} \), where "rise" is the change in y-values, and "run" is the change in x-values.</td>
+  </tr>
+  <tr>
+    <td><strong>Forgetting to use a point for the y-intercept</strong>: Omitting the b value in the equation \( y = mx + b \) or assuming it is zero without verifying.</td>
+    <td><strong>Calculate the y-intercept</strong>: Plug a point from the table into \( y = mx + b \) after finding the slope to solve for b.</td>
+  </tr>
+  <tr>
+    <td><strong>Using inconsistent points</strong>: Choosing two points that don't follow the linear relationship due to misalignment or error.</td>
+    <td><strong>Verify points carefully</strong>: Confirm that all points fit a linear pattern before choosing two to calculate the slope and y-intercept.</td>
+  </tr>
+  <tr>
+    <td><strong>Switching x and y values</strong>: Misplacing x and y values in the equation, leading to an incorrect relationship.</td>
+    <td><strong>Double-check variable placement</strong>: Ensure that x-values represent the input (independent) variable and y-values represent the output (dependent) variable in \( y = mx + b \).</td>
+  </tr>
+  <tr>
+    <td><strong>Incorrect simplification</strong>: Failing to simplify the slope, making the equation appear more complex.</td>
+    <td><strong>Simplify the slope</strong>: Reduce the slope to its simplest form (if possible) for a cleaner, clearer equation.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Write an equation for a linear relationship --><!-- BEGIN Visuals: Write an equation for a linear relationship-->
+<div id="A.REP.EQULINE.V" class="tabcontent">
+	<p>
+		
+		N/A
+		
+	</p>
+</div>
+<!-- END Visuals: Write an equation for a linear relationship --><!-- BEGIN The Mathematics: Write an equation for a linear relationship-->
+<div id="A.REP.EQULINE.D" class="tabcontent">
+	<p>
+		
+		<b>Slope-intercept form</b> is just one of many ways to write a linear equation.
+Determining the slope and the \(y\)-intercept from a table of linearly related data
+can be done as described in the "How To" section.
+The key fact is that each row of the table contains a pair of \(x\) and \(y\) values
+that make the equation true.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Write an equation for a linear relationship -->
 </div>
 <!-- END TOOL: toolname -->
 
@@ -3213,14 +3544,67 @@ In symbols you can write this as
 
 <tr>
 <td>1.</td>
+<td>Start with a scenario involving a linear relationship.</td>
+<td>Here's a scenario involving a starting value and constant change (for other kinds, see the "Examples" section): An oven starts at 70 degrees Fahrentheit and increases by 10 degrees in temperature every minute while it's preheating.</td>
 </tr>
 
 <tr>
 <td>2.</td>
+<td>Identify the two variables you want to relate. Generally, there is an "input" variable known as the <b>independent variable</b> and an "output" variable known as the <b>dependent variable</b> because it <i>depends</i> on the input. Include descriptions and units for both variables.</td>
+<td>Independent variable: \(t = \text{time in minutes since the oven started preheating}\)
+<br>
+Dependent variable: \(d = \text{oven temperature measured in degrees Fahrenheit}\)</td>
 </tr>
 
 <tr>
 <td>3.</td>
+<td>Set up a table with the variables as headers and the independent variable on the left.</td>
+<td>
+
+<table>
+<tr>
+<th> \(t\) </th>
+<th> \(d\) </th>
+</tr>
+
+<tr>
+<td>\(\)</td>
+<td>\(\)</td>
+</tr>
+
+
+</table>
+</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Fill in some information you know to be true based on the scenario.</td>
+<td>
+<table>
+<tr>
+<th> \(t\) </th>
+<th> \(d\) </th>
+</tr>
+
+<tr>
+<td>\(0\)</td>
+<td>\(70\)</td>
+</tr>
+
+<tr>
+<td>\(1\)</td>
+<td>\(80\)</td>
+</tr>
+
+
+<tr>
+<td>\(2\)</td>
+<td>\(90\)</td>
+</tr>
+
+</table>
+</td>
 </tr>
 
 </table>
@@ -3231,7 +3615,59 @@ In symbols you can write this as
 <div id="A.REP.TAB.E" class="tabcontent">
 	<p>
 		
-		
+		<ul>
+  <li>
+    <strong>Scenario:</strong> A car rental company charges a flat fee of $30 plus $10 per hour.
+    <table>
+      <tr><th>Hours (x)</th><th>Cost ($y)</th></tr>
+      <tr><td>1</td><td>40</td></tr>
+      <tr><td>2</td><td>50</td></tr>
+      <tr><td>3</td><td>60</td></tr>
+      <tr><td>4</td><td>70</td></tr>
+    </table>
+  </li>
+  <li>
+    <strong>Scenario:</strong> A plumber charges an initial service fee of $50 and $25 for each additional hour of work.
+    <table>
+      <tr><th>Hours (x)</th><th>Total Cost ($y)</th></tr>
+      <tr><td>1</td><td>75</td></tr>
+      <tr><td>2</td><td>100</td></tr>
+      <tr><td>3</td><td>125</td></tr>
+      <tr><td>4</td><td>150</td></tr>
+    </table>
+  </li>
+  <li>
+    <strong>Scenario:</strong> A hot air balloon is descending at a steady rate of 200 feet per minute.
+    <table>
+      <tr><th>Minutes (x)</th><th>Altitude (feet y)</th></tr>
+      <tr><td>1</td><td>800</td></tr>
+      <tr><td>2</td><td>600</td></tr>
+      <tr><td>3</td><td>400</td></tr>
+      <tr><td>4</td><td>200</td></tr>
+    </table>
+  </li>
+  <li>
+    <strong>Scenario:</strong> A cell phone company offers a monthly plan with a $15 base fee plus $5 per gigabyte of data.
+    <table>
+      <tr><th>Data (GB, x)</th><th>Monthly Cost ($y)</th></tr>
+      <tr><td>1</td><td>20</td></tr>
+      <tr><td>2</td><td>25</td></tr>
+      <tr><td>3</td><td>30</td></tr>
+      <tr><td>4</td><td>35</td></tr>
+    </table>
+  </li>
+  <li>
+    <strong>Scenario:</strong> A farmer plants trees in rows, with each row containing 5 more trees than the previous row.
+    <table>
+      <tr><th>Row Number (x)</th><th>Number of Trees (y)</th></tr>
+      <tr><td>1</td><td>10</td></tr>
+      <tr><td>2</td><td>15</td></tr>
+      <tr><td>3</td><td>20</td></tr>
+      <tr><td>4</td><td>25</td></tr>
+    </table>
+  </li>
+</ul>
+
 		
 	</p>
 </div>
@@ -3244,7 +3680,26 @@ In symbols you can write this as
 <th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
 <th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
 </tr>
-		
+		<tr>
+    <td><strong>Misinterpreting the rate of change:</strong> Confusing the rate of change with a flat fee or starting value, or applying the rate inconsistently across different values.</td>
+    <td><strong>Identify the rate clearly:</strong> Make sure the rate of change is applied evenly across each step, adding or subtracting consistently for each new row in the table.</td>
+  </tr>
+  <tr>
+    <td><strong>Ignoring the initial value:</strong> Failing to include the initial or starting value, which shifts all subsequent values incorrectly.</td>
+    <td><strong>Always account for the starting value:</strong> Start with the initial amount and then apply the rate of change as indicated in the scenario.</td>
+  </tr>
+  <tr>
+    <td><strong>Reversing the relationship:</strong> Mixing up independent (x) and dependent (y) values, leading to incorrect pairings.</td>
+    <td><strong>Identify x and y variables clearly:</strong> Label columns correctly, usually placing the input or time-based variable as x and the dependent outcome as y.</td>
+  </tr>
+  <tr>
+    <td><strong>Skipping or miscalculating increments:</strong> Incorrectly applying or skipping steps in the rate of change, resulting in values that do not reflect the scenario accurately.</td>
+    <td><strong>Double-check calculations:</strong> Carefully add or subtract the rate for each new row to ensure consistency across the table.</td>
+  </tr>
+  <tr>
+    <td><strong>Overlooking units or labels:</strong> Leaving out or mislabeling units, which can cause confusion when interpreting values in the table.</td>
+    <td><strong>Include units and labels:</strong> Clearly label each column with appropriate units (e.g., hours, dollars) to avoid interpretation errors.</td>
+  </tr>
 		</table>
 	</p>
 </div>
@@ -3252,7 +3707,7 @@ In symbols you can write this as
 <div id="A.REP.TAB.V" class="tabcontent">
 	<p>
 		
-		
+		N/A
 		
 	</p>
 </div>
@@ -3260,7 +3715,8 @@ In symbols you can write this as
 <div id="A.REP.TAB.D" class="tabcontent">
 	<p>
 		
-		
+		<b>Tables</b> are one of many representations of relationships between variables.
+Converting between them and graphs and equations can often help reveal important details about mathematical scenarios.
 		
 	</p>
 </div>
@@ -3268,86 +3724,10 @@ In symbols you can write this as
 </div>
 <!-- END TOOL: toolname -->
 
-<!-- BEGIN TOOL: Write an equation -->
-<button type="button" class="tool">Write an equation</button>
-<div class="toolcontent">
-	<!-- BEGIN TABLINKS: Write an equation -->
-	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'A.REP.EQU.H')">How To</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.EQU.E')">Examples</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.EQU.M')">Common Mistakes</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.EQU.V')">Visualizations</button>
-		<button class="tablinks" onclick="openTab(event,'A.REP.EQU.D')">The Mathematics</button>
-		
-	</div>
-	<!-- END TABLINKS: Write an equation -->
-<!-- BEGIN How to: Write an equation-->
-<div id="A.REP.EQU.H" class="tabcontent">
-	<p>
-		
-		<table>
-
-<tr>
-<td>1.</td>
-</tr>
-
-<tr>
-<td>2.</td>
-</tr>
-
-<tr>
-<td>3.</td>
-</tr>
-
-</table>
-		
-	</p>
-</div>
-<!-- END How to: Write an equation --><!-- BEGIN Examples: Write an equation-->
-<div id="A.REP.EQU.E" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END Examples: Write an equation --><!-- BEGIN Common Mistakes: Write an equation-->
-<div id="A.REP.EQU.M" class="tabcontent">
-	<p>
-		
-<table>
-<tr>
-<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
-<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
-</tr>
-		
-		</table>
-	</p>
-</div>
-<!-- END Common Mistakes: Write an equation --><!-- BEGIN Visuals: Write an equation-->
-<div id="A.REP.EQU.V" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END Visuals: Write an equation --><!-- BEGIN The Mathematics: Write an equation-->
-<div id="A.REP.EQU.D" class="tabcontent">
-	<p>
-		
-		
-		
-	</p>
-</div>
-<!-- END The Mathematics: Write an equation -->
-</div>
-<!-- END TOOL: toolname -->
-
 			</div>
-			<!-- END DRAWER: Use different representations --><!-- DRAWER BUTTON: Stray content (slope, y-intercept, constraints, domain, function formalities) -->
-			<button type="button" class="drawer"> Stray content (slope, y-intercept, constraints, domain, function formalities)</button>
-			<!-- BEGIN DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities) -->
+			<!-- END DRAWER: Use different representations --><!-- DRAWER BUTTON: Stray content (slope, y-intercept, constraints, domain, function formalities, graphing 2-var lin. ineq.) -->
+			<button type="button" class="drawer"> Stray content (slope, y-intercept, constraints, domain, function formalities, graphing 2-var lin. ineq.)</button>
+			<!-- BEGIN DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities, graphing 2-var lin. ineq.) -->
 			<div class="drawercontent">
 <!-- BEGIN TOOL: Find the slope of a linear relationship -->
 <button type="button" class="tool">Find the slope of a linear relationship</button>
@@ -3465,8 +3845,134 @@ Dividing by zero is undefined, so vertical lines actually have undefined slope.
 </div>
 <!-- END TOOL: toolname -->
 
+<!-- BEGIN TOOL: Graph a 2-variable linear inequality -->
+<button type="button" class="tool">Graph a 2-variable linear inequality</button>
+<div class="toolcontent">
+	<!-- BEGIN TABLINKS: Graph a 2-variable linear inequality -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.G2INEQ.H')">How To</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.G2INEQ.E')">Examples</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.G2INEQ.M')">Common Mistakes</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.G2INEQ.V')">Visualizations</button>
+		<button class="tablinks" onclick="openTab(event,'A.STRAY.G2INEQ.D')">The Mathematics</button>
+		
+	</div>
+	<!-- END TABLINKS: Graph a 2-variable linear inequality -->
+<!-- BEGIN How to: Graph a 2-variable linear inequality-->
+<div id="A.STRAY.G2INEQ.H" class="tabcontent">
+	<p>
+		
+		<table>
+
+<tr>
+<td>1.</td>
+<td>Start with a 2-variable linear inequality.</td>
+<td>\(y \leq 2x-1\)</td>
+</tr>
+
+<tr>
+<td>2.</td>
+<td>Graph the equation formed by replacing the inequality sign with an equals sign. If the inequality is <i>strict</i> (as in \(<\) or \(>\)), then make the line dotted. If the inequality is <i>inclusive</i> (as in \(\leq\) or \(\geq\)), then make the line solid.</td>
+<td>Here is the graph of \(y = 2x-1\).
+<br>
+<img src="./media/linear_graph_y_2x_minus_1_no_points.png" alt="Linear Graph of y = 2x - 1">
+</td>
+</tr>
+
+<tr>
+<td>3.</td>
+<td>Pick one point each on either side of the line.</td>
+<td>\((0,10)\) and \((1,-4)\)</td>
+</tr>
+
+<tr>
+<td>4.</td>
+<td>Check if the inequality is true for each of those points.</td>
+<td>\((0,10) \rightarrow 10 \leq 2(0) - 1 \rightarrow\) false!
+<br>
+\((1,-4) \rightarrow -4 \leq 2(1)-1 \rightarrow\) true!</td>
+</tr>
+
+<tr>
+<td>5.</td>
+<td>Shade the coordinate plane on the side of the line with the point that made the inequality <i>true</i>.</td>
+<td>
+<img src="./media/graph_2_var_lin_ineq.png">
+</td>
+</tr>
+
+</table>
+		
+	</p>
+</div>
+<!-- END How to: Graph a 2-variable linear inequality --><!-- BEGIN Examples: Graph a 2-variable linear inequality-->
+<div id="A.STRAY.G2INEQ.E" class="tabcontent">
+	<p>
+		
+		This example was generated using <a href="https://www.desmos.com/calculator/kpzlneptds">this Desmos graph</a>.
+<br>
+<img src="./media/graph_ineq_ex1.png">
+		
+	</p>
+</div>
+<!-- END Examples: Graph a 2-variable linear inequality --><!-- BEGIN Common Mistakes: Graph a 2-variable linear inequality-->
+<div id="A.STRAY.G2INEQ.M" class="tabcontent">
+	<p>
+		
+<table>
+<tr>
+<th><div class="tinyicon"><img src="./media/mistake_nope.png"></div>Mistake</th>
+<th><div class="tinyicon"><img src="./media/mistake_yep.png"></div>How to fix it</th>
+</tr>
+		<tr>
+    <td>Using a solid line for inequalities that are <code>&lt;</code> or <code>&gt;</code>.</td>
+    <td>Use a dashed line for <code>&lt;</code> or <code>&gt;</code> to indicate that points on the line are not included in the solution.</td>
+  </tr>
+  <tr>
+    <td>Using a dashed line for inequalities that are <code>&le;</code> or <code>&ge;</code>.</td>
+    <td>Use a solid line for <code>&le;</code> or <code>&ge;</code> to include points on the line as part of the solution set.</td>
+  </tr>
+  <tr>
+    <td>Shading the wrong side of the line.</td>
+    <td>Test a point (like the origin if it’s not on the line) in the inequality to confirm the correct side to shade.</td>
+  </tr>
+  <tr>
+    <td>Graphing the line with the wrong slope or y-intercept.</td>
+    <td>Double-check the slope and intercept from the equation (convert to slope-intercept form if needed) before drawing the line.</td>
+  </tr>
+  <tr>
+    <td>Forgetting to flip the inequality sign when multiplying or dividing by a negative number.</td>
+    <td>Whenever you multiply or divide by a negative number, remember to reverse the inequality sign to maintain the correct direction.</td>
+  </tr>
+  <tr>
+    <td>Using the equation of the line (e.g., <code>y = mx + b</code>) instead of the inequality.</td>
+    <td>Rewrite the inequality if necessary and make sure the graph reflects the inequality rather than the equality.</td>
+  </tr>
+		</table>
+	</p>
+</div>
+<!-- END Common Mistakes: Graph a 2-variable linear inequality --><!-- BEGIN Visuals: Graph a 2-variable linear inequality-->
+<div id="A.STRAY.G2INEQ.V" class="tabcontent">
+	<p>
+		
+		See the "How To" and "Examples" sections!
+		
+	</p>
+</div>
+<!-- END Visuals: Graph a 2-variable linear inequality --><!-- BEGIN The Mathematics: Graph a 2-variable linear inequality-->
+<div id="A.STRAY.G2INEQ.D" class="tabcontent">
+	<p>
+		
+		Graphing a <b>2-variable linear inequality</b> entails shading in the entire region of the coordinate plane where the coordinates satisfy the given inequality. This process starts by graphing an <i>equality</i> to find the boundary between where the inequality is true or false.
+		
+	</p>
+</div>
+<!-- END The Mathematics: Graph a 2-variable linear inequality -->
+</div>
+<!-- END TOOL: toolname -->
+
 			</div>
-			<!-- END DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities) --><!-- id'd header for Statistics -->
+			<!-- END DRAWER: Stray content (slope, y-intercept, constraints, domain, function formalities, graphing 2-var lin. ineq.) --><!-- id'd header for Statistics -->
 			<h1 id="Statistics">Statistics</h1><!-- DRAWER BUTTON: Measure the center of data -->
 			<button type="button" class="drawer"> Measure the center of data</button>
 			<!-- BEGIN DRAWER: Measure the center of data -->

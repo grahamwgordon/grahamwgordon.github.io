@@ -15,11 +15,20 @@ img {
 
 
 
-th, td {
+td {
   padding: 8px ;
   border: 1px solid #ddd;
   background-color: white;
 }
+
+
+th {
+  padding: 8px ;
+  border: 1px solid #ddd;
+  background-color: rgb(255, 251, 192);
+}
+
+
 
 *, .tablinks {
   font-family: Verdana, sans-serif;
